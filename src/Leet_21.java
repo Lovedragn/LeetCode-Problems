@@ -1,10 +1,15 @@
+
 class Node {
+
     int data;
     Node next;
 }
-public class Leet_2 {
+
+public class Leet_21 {
+
     Node head = null;
     Node head2 = null;
+
     public void insert(int data) {
         Node node = new Node();
         node.data = data;
@@ -36,62 +41,56 @@ public class Leet_2 {
             n2.next = node2;
         }
     }
+
     public void show() {
         Node n = head;
         while (n != null) {
             System.out.print(n.data);
-            n = n.next;
-            if (n != null) {
+            if (n.next != null) {
                 System.out.print(" -> ");
             }
+            n = n.next;
         }
     }
-    
-    public Node addTwoNumbers(Node l1, Node l2) {
-        Node dummy = new Node();
-        Node res = dummy;
-        int total = 0, carry = 0;
-    
-        while (l1 != null || l2 != null || carry != 0) {
-            total = carry;
-    
-            if (l1 != null) {
-                total += l1.data;
-                l1 = l1.next;
-            }
-            if (l2 != null) {
-                total += l2.data;
-                l2 = l2.next;
-            }
-    
-            int num = total % 10;
-            carry = total / 10;
-    
-            dummy.next = new Node();
-            dummy = dummy.next;
-            dummy.data = num; // Assign value to the new node
-        }
-    
-        return res.next;
-    }
-    public static void main(String[] args) {
-        Leet_2 LL = new Leet_2();
-        //call methods
-        LL.insert(5);
-        LL.insert(2);
-        LL.insert(13);
-        LL.insert(3);
-        LL.insert(8);
 
+    public Node mergeTwoLists(Node list1, Node list2) {
+        Node dummy = new Node();
+        Node current = dummy;
+        while (list1 != null && list2 != null) {
+
+            if (list1.data <= list2.data) {
+                current.next = list1;
+                list1 = list1.next;
+            } else {
+                current.next = list2;
+                list2 = list2.next;
+            }
+            current = current.next;
+        }
+
+        if (list1 != null) {
+            current.next = list1;
+        } else {
+            current.next = list2;
+        }
+
+        return dummy.next;
+    }
+
+    public static void main(String[] args) {
+        Leet_21 LL = new Leet_21();
+        //call methods
+        LL.insert(1);
+        LL.insert(3);
+        LL.insert(13);
+
+        LL.insert1(1);
+        LL.insert1(4);
         LL.insert1(5);
-        LL.insert1(2);
-        LL.insert1(13);
-        LL.insert1(3);
-        LL.insert1(8);
+
         //call
-        LL.head = LL.addTwoNumbers(LL.head,LL.head2);
+        LL.head = LL.mergeTwoLists(LL.head, LL.head2);
 
         LL.show();
     }
-
 }

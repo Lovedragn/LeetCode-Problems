@@ -1,10 +1,15 @@
+
 class Node {
+
     int data;
     Node next;
 }
-public class Leet_2 {
+
+public class Leet_1669 {
+
     Node head = null;
     Node head2 = null;
+
     public void insert(int data) {
         Node node = new Node();
         node.data = data;
@@ -36,62 +41,52 @@ public class Leet_2 {
             n2.next = node2;
         }
     }
+
     public void show() {
         Node n = head;
         while (n != null) {
             System.out.print(n.data);
-            n = n.next;
-            if (n != null) {
+            if (n.next != null) {
                 System.out.print(" -> ");
             }
+            n = n.next;
         }
     }
-    
-    public Node addTwoNumbers(Node l1, Node l2) {
-        Node dummy = new Node();
-        Node res = dummy;
-        int total = 0, carry = 0;
-    
-        while (l1 != null || l2 != null || carry != 0) {
-            total = carry;
-    
-            if (l1 != null) {
-                total += l1.data;
-                l1 = l1.next;
-            }
-            if (l2 != null) {
-                total += l2.data;
-                l2 = l2.next;
-            }
-    
-            int num = total % 10;
-            carry = total / 10;
-    
-            dummy.next = new Node();
-            dummy = dummy.next;
-            dummy.data = num; // Assign value to the new node
+
+    public Node mergeInBetween(Node list1, int a, int b, Node list2) {
+        if (list1 == null || list2 == null) {
+            return list1;
         }
-    
-        return res.next;
+        Node node = list1;
+        for (int i = 1; i < a; i++) {
+            node = node.next;
+        }
+        Node temp = node;
+        for (int i = 0; i <= (b - a + 1); i++) {
+            temp = temp.next;
+        }
+        //
+        //
+        node.next = list2;
+        Node tt = list2;
+        while (tt.next != null) {
+            tt = tt.next;
+        }
+        tt.next = temp;
+        return list1;
     }
+
     public static void main(String[] args) {
-        Leet_2 LL = new Leet_2();
+        Leet_1669 LL = new Leet_1669();
         //call methods
-        LL.insert(5);
-        LL.insert(2);
-        LL.insert(13);
-        LL.insert(3);
-        LL.insert(8);
-
-        LL.insert1(5);
-        LL.insert1(2);
-        LL.insert1(13);
-        LL.insert1(3);
-        LL.insert1(8);
+        LL.insert(1);
+        LL.insert(0);
+        LL.insert(0);
+        LL.insert(21);
         //call
-        LL.head = LL.addTwoNumbers(LL.head,LL.head2);
-
+        LL.head = LL.mergeInBetween(LL.head, 1, 2, LL.head2);
         LL.show();
+
     }
 
 }

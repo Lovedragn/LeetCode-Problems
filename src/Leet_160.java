@@ -1,10 +1,15 @@
+
 class Node {
+
     int data;
     Node next;
 }
-public class Leet_2 {
+
+public class Leet_160 {
+
     Node head = null;
     Node head2 = null;
+
     public void insert(int data) {
         Node node = new Node();
         node.data = data;
@@ -36,62 +41,72 @@ public class Leet_2 {
             n2.next = node2;
         }
     }
+
     public void show() {
         Node n = head;
         while (n != null) {
             System.out.print(n.data);
-            n = n.next;
-            if (n != null) {
+            if (n.next != null) {
                 System.out.print(" -> ");
             }
+            n = n.next;
         }
     }
-    
-    public Node addTwoNumbers(Node l1, Node l2) {
-        Node dummy = new Node();
-        Node res = dummy;
-        int total = 0, carry = 0;
-    
-        while (l1 != null || l2 != null || carry != 0) {
-            total = carry;
-    
-            if (l1 != null) {
-                total += l1.data;
-                l1 = l1.next;
-            }
-            if (l2 != null) {
-                total += l2.data;
-                l2 = l2.next;
-            }
-    
-            int num = total % 10;
-            carry = total / 10;
-    
-            dummy.next = new Node();
-            dummy = dummy.next;
-            dummy.data = num; // Assign value to the new node
+
+    public Node getIntersectionNode(Node headA, Node headB) {
+        Node a = headA;
+        Node b = headB;
+        int sizeA = 0;
+        int sizeB = 0;
+
+        while (a != null) {
+            sizeA++;
+            a = a.next;
         }
-    
-        return res.next;
+        while (b != null) {
+            sizeB++;
+            b = b.next;
+        }
+
+        int cal = Math.abs(sizeA - sizeB);
+        a = headA;
+        b = headB;
+
+        if (sizeA > sizeB) {
+            while (cal-- > 0) {
+                a = a.next;
+            }
+        } else {
+            while (cal-- > 0) {
+                b = b.next;
+            }
+        }
+
+        while (a != b) {
+            a = a.next;
+            b = b.next;
+            if (a == null || b == null) {
+                return null;
+            }
+        }
+
+        return a;
     }
+
     public static void main(String[] args) {
-        Leet_2 LL = new Leet_2();
+        Leet_160 LL = new Leet_160();
         //call methods
-        LL.insert(5);
+        LL.insert(15);
         LL.insert(2);
         LL.insert(13);
-        LL.insert(3);
-        LL.insert(8);
 
         LL.insert1(5);
         LL.insert1(2);
-        LL.insert1(13);
-        LL.insert1(3);
-        LL.insert1(8);
+        LL.insert1(1223);
+
         //call
-        LL.head = LL.addTwoNumbers(LL.head,LL.head2);
+        LL.head = LL.getIntersectionNode(LL.head, LL.head2);
 
         LL.show();
     }
-
 }
