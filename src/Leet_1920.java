@@ -4,10 +4,9 @@ public class Leet_1920 {
     public static int[] buildArray(int[] nums) {
         int[] res = new int[nums.length];
         for (int i = 0; i < nums.length; i++) {
-            int idx = nums[i];
-            res[i] = nums[idx];
+            res[i] = nums[nums[i]];
         }
-        return re
+        return res;
     }
 
     public static void main(String[] args) {
