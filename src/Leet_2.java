@@ -3,8 +3,10 @@ class Node {
     Node next;
 }
 public class Leet_2 {
+    
     Node head = null;
     Node head2 = null;
+    
     public void insert(int data) {
         Node node = new Node();
         node.data = data;
