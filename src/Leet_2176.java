@@ -12,7 +12,7 @@ public class Leet_2176 {
                     
                 }
             }
-        }
+        }N
 
         return count;
     }
