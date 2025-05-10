@@ -91,18 +91,31 @@ public class Leet_104 {
         return Math.max(maxDepth(root.left), maxDepth(root.right)) + 1;
     }
 
-        public boolean isSameTree(TreeNode p, TreeNode2 q) {
-            if (p == null && q== null) {
-                return true;
-            }
-            if (p != null && q != null) {
-                if (q.val == p.val) {
-                    return isSameTree(p.left, q.left) && isSameTree(p.right, q.right);
-                } 
-            }
-
-            return false;
+    public boolean isSameTree(TreeNode p, TreeNode2 q) {
+        if (p == null && q == null) {
+            return true;
         }
+        if (p != null && q != null) {
+            if (q.val == p.val) {
+                return isSameTree(p.left, q.left) && isSameTree(p.right, q.right);
+            }
+        }
+
+        return false;
+    }
+
+    public TreeNode invertTree(TreeNode root) {
+        if (root == null) {
+            return root;
+        }
+        TreeNode temp = root.left;
+        root.left = root.right;
+        root.right = temp;
+
+        invertTree(root.left);
+        invertTree(root.right);
+        return root;
+    }
 
     public static void main(String[] args) {
         Leet_104 tree = new Leet_104();
