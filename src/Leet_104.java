@@ -131,8 +131,19 @@ public class Leet_104 {
     }
 
     public boolean isSymmetric(TreeNode root) {
-
         return mirror(root, root);
+    }
+
+    public boolean hasPathSum(TreeNode root, int targetSum) {
+        if (root == null) {
+            return false;
+        }
+        targetSum -= root.val;
+        if (0 == targetSum) {
+            return true;
+        }
+        return hasPathSum(root.left, targetSum) || hasPathSum(root.right, targetSum);
+
     }
 
     public static void main(String[] args) {
@@ -141,11 +152,10 @@ public class Leet_104 {
         tree.add(2, root);
         tree.add(3, root);
 
-        tree.add2(1, root2);
-        tree.add2(2, root2);
-        tree.add2(3, root2);
-
-        System.out.println("isSymmetic: " + tree.isSymmetric(root));
+        // tree.add2(1, root2);
+        // tree.add2(2, root2);
+        // tree.add2(3, root2);
+        System.out.println("Target Reached? : " + tree.hasPathSum(root, 3));
 
     }
 }
