@@ -117,6 +117,24 @@ public class Leet_104 {
         return root;
     }
 
+    public static boolean mirror(TreeNode rot, TreeNode rot2) {
+        if (rot == null && rot2 == null) {
+            return true;
+        }
+        if (rot == null || rot2 == null) {
+            return false;
+        }
+
+        return rot.val == rot2.val
+                && mirror(rot.left, rot2.right)
+                && mirror(rot.right, rot2.left);
+    }
+
+    public boolean isSymmetric(TreeNode root) {
+
+        return mirror(root, root);
+    }
+
     public static void main(String[] args) {
         Leet_104 tree = new Leet_104();
         tree.add(1, root);
@@ -127,7 +145,7 @@ public class Leet_104 {
         tree.add2(2, root2);
         tree.add2(3, root2);
 
-        System.out.println("Max depth: " + tree.isSameTree(root, root2));
+        System.out.println("isSymmetic: " + tree.isSymmetric(root));
 
     }
 }
