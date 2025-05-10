@@ -14,9 +14,23 @@ class TreeNode {
     }
 }
 
+class TreeNode2 {
+
+    int val;
+    TreeNode2 left;
+    TreeNode2 right;
+
+    TreeNode2(int val) {
+        this.val = val;
+        this.left = null;
+        this.right = null;
+    }
+}
+
 public class Leet_104 {
 
     static TreeNode root = null;
+    static TreeNode2 root2 = null;
 
     public void add(int val, TreeNode current) {
         if (null == current) {
@@ -44,39 +58,63 @@ public class Leet_104 {
         }
     }
 
-    public void add2(int val, TreeNode current) {
-        if (current == null) {
-            root = new TreeNode(val);
+    public void add2(int val, TreeNode2 current) {
+        if (null == current) {
+            root2 = new TreeNode2(val);
             return;
         }
-        if (current.val > val) {
-            if (current.left == null) {
-                current.val = val;
-            }
-            add2(val, current.left);
-        } else if (current.val < val) {
-            add2(val, current.right);
-        }
+        Queue<TreeNode2> q = new LinkedList<>();
+        q.add(current);
+        while (!q.isEmpty()) {
+            TreeNode2 cur = q.poll();
 
+            if (cur.left == null) {
+                cur.left = new TreeNode2(val);
+                return;
+            } else {
+                q.add(cur.left);
+
+            }
+            if (cur.right == null) {
+                cur.right = new TreeNode2(val);
+                return;
+            } else {
+                q.add(cur.right);
+            }
+        }
     }
 
     public int maxDepth(TreeNode root) {
         if (root == null) {
             return 0;
         }
-        return Math.max(maxDepth(root.left),maxDepth(root.right))+1;
+        return Math.max(maxDepth(root.left), maxDepth(root.right)) + 1;
     }
+
+        public boolean isSameTree(TreeNode p, TreeNode2 q) {
+            if (p == null && q== null) {
+                return true;
+            }
+            if (p != null && q != null) {
+                if (q.val == p.val) {
+                    return isSameTree(p.left, q.left) && isSameTree(p.right, q.right);
+                } 
+            }
+
+            return false;
+        }
 
     public static void main(String[] args) {
         Leet_104 tree = new Leet_104();
         tree.add(1, root);
         tree.add(2, root);
         tree.add(3, root);
-        tree.add(4, root);
-        tree.add(5, root);
-        tree.add(6, root);
-        tree.add(7, root);
-        System.out.println("Max depth: " + tree.maxDepth(root));
+
+        tree.add2(1, root2);
+        tree.add2(2, root2);
+        tree.add2(3, root2);
+
+        System.out.println("Max depth: " + tree.isSameTree(root, root2));
 
     }
 }
