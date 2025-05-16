@@ -167,16 +167,25 @@ public class Leet_104 {
 
     }
 
+
+    public int countNodes(TreeNode root) {
+        if (root == null) {
+            return 0;
+        }
+
+        return countNodes(root.left) + countNodes(root.right)+1;
+    }
     public static void main(String[] args) {
         Leet_104 tree = new Leet_104();
         tree.add(5, root);
         tree.add(6, root);
         tree.add(11, root);
 
+        tree.add(112, root);
         // tree.add2(1, root2);
         // tree.add2(2, root2);
         // tree.add2(3, root2);
-        System.out.println("Range Value? : " + tree.hasPathSum(root, 22));
+        System.out.println("Range Value? : " + tree.countNodes(root));
 
     }
 }
