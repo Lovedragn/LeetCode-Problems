@@ -138,19 +138,22 @@ public class Leet_104 {
         if (root == null) {
             return false;
         }
-        targetSum -= root.val;
-        if (0 == targetSum) {
-            return true;
+        if (root.left == null && root.right == null) {
+            return targetSum == root.val;
         }
+        targetSum -= root.val;
+
         return hasPathSum(root.left, targetSum) || hasPathSum(root.right, targetSum);
 
     }
 
     public int rangeSumBST(TreeNode root, int low, int high) {
-        
-        return  rangeSum(root, low, high );
-    }   
-    public int rangeSum(TreeNode root , int low , int high ){
+
+        return rangeSum(root, low, high);
+    }
+
+    public int rangeSum(TreeNode root, int low, int high) {
+
         if (root == null) {
             return 0;
         }
@@ -160,9 +163,10 @@ public class Leet_104 {
         if (root.val > high) {
             return 0;
         }
-        return root.val + rangeSum(root.left , low , high) + rangeSum(root.right , low  , high);
+        return root.val + rangeSum(root.left, low, high) + rangeSum(root.right, low, high);
 
     }
+
     public static void main(String[] args) {
         Leet_104 tree = new Leet_104();
         tree.add(5, root);
@@ -172,7 +176,7 @@ public class Leet_104 {
         // tree.add2(1, root2);
         // tree.add2(2, root2);
         // tree.add2(3, root2);
-        System.out.println("Range Value? : " + tree.rangeSumBST(root, 5, 10));
+        System.out.println("Range Value? : " + tree.hasPathSum(root, 22));
 
     }
 }
