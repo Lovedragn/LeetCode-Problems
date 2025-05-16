@@ -146,16 +146,33 @@ public class Leet_104 {
 
     }
 
+    public int rangeSumBST(TreeNode root, int low, int high) {
+        
+        return  rangeSum(root, low, high );
+    }   
+    public int rangeSum(TreeNode root , int low , int high ){
+        if (root == null) {
+            return 0;
+        }
+        if (root.val < low) {
+            return 0;
+        }
+        if (root.val > high) {
+            return 0;
+        }
+        return root.val + rangeSum(root.left , low , high) + rangeSum(root.right , low  , high);
+
+    }
     public static void main(String[] args) {
         Leet_104 tree = new Leet_104();
-        tree.add(1, root);
-        tree.add(2, root);
-        tree.add(3, root);
+        tree.add(5, root);
+        tree.add(6, root);
+        tree.add(11, root);
 
         // tree.add2(1, root2);
         // tree.add2(2, root2);
         // tree.add2(3, root2);
-        System.out.println("Target Reached? : " + tree.hasPathSum(root, 3));
+        System.out.println("Range Value? : " + tree.rangeSumBST(root, 5, 10));
 
     }
 }
