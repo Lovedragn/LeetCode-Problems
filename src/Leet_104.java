@@ -175,17 +175,32 @@ public class Leet_104 {
 
         return countNodes(root.left) + countNodes(root.right)+1;
     }
+
+    public boolean isCousins(TreeNode root, int x, int y) {
+        int l = isCousinstemp(root, x);
+        int r = isCousinstemp(root, y);
+        
+        return l == r; 
+    }
+
+    public static int isCousinstemp(TreeNode root ,int x){
+        if (root == null) {
+            return 0;
+        }
+        if (root.val == x) {
+            return 0;
+        }
+        return 1+(isCousinstemp(root.left, x)+isCousinstemp(root.right, x));
+    }
+    
     public static void main(String[] args) {
         Leet_104 tree = new Leet_104();
-        tree.add(5, root);
-        tree.add(6, root);
-        tree.add(11, root);
+        tree.add2(1, root2);
+        tree.add2(2, root2);
+        tree.add2(3, root2);
+        tree.add(4, root);
 
-        tree.add(112, root);
-        // tree.add2(1, root2);
-        // tree.add2(2, root2);
-        // tree.add2(3, root2);
-        System.out.println("Range Value? : " + tree.countNodes(root));
-
+        
+        System.out.println("Range Value? : " + tree.isCousins(root, 4, 3));
     }
 }
