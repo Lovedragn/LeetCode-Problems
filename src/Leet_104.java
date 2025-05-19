@@ -197,7 +197,7 @@ public class Leet_104 {
                 }
                 if (temproot.left != null && temproot.right != null) {
 
-                    if ((root.left.val == x && root.right.val == y) || (root.left.val == y && root.right.val == x)) {
+                    if ((temproot.left.val == x && temproot.right.val == y) || (temproot.left.val == y && temproot.right.val == x)) {
                         return false;
                     }
                 }
