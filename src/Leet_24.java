@@ -1,5 +1,4 @@
 
-
 public class Leet_24 {
 
     class Node {
@@ -38,18 +37,23 @@ public class Leet_24 {
     }
 
     public Node swapPairs(Node head) {
-        
+        Node temp = head;
+        while (temp != null && temp.next != null) {
+            int swap = temp.data;
+            temp.data = temp.next.data;
+            temp.next.data = swap;
+            temp = temp.next.next;
+        }
         return head;
     }
 
     public static void main(String[] args) {
         Leet_24 LL = new Leet_24();
         //call methods
-        LL.insert(5);
+        LL.insert(1);
         LL.insert(2);
-        LL.insert(13);
         LL.insert(3);
-        LL.insert(8);
+        LL.insert(4);
         //call
         LL.head = LL.swapPairs(LL.head);
         LL.show();
