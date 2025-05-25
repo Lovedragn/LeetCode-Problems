@@ -1,6 +1,5 @@
 
 import java.util.*;
-import javax.swing.RootPaneContainer;
 
 class TreeNode {
 
@@ -276,7 +275,7 @@ public class Leet_104 {
     }
 
     public int sumRootToLeaf(TreeNode root) {
-        
+
         sumRootToLeafHelper(root, new StringBuilder());
         return total;
     }
@@ -297,10 +296,42 @@ public class Leet_104 {
         return;
     }
 
+    public boolean isSubtree(TreeNode root, TreeNode2 subRoot) {
+       
+        if (root == null) {
+            return false;
+        }
+        if (sumroottree_temp(root , subRoot)){
+        return true;
+        }
+        return isSubtree(root.left , subRoot) || isSubtree(root.right , subRoot);
+    }
+
+    public static boolean sumroottree_temp(TreeNode root, TreeNode2 subroot) {
+        if (root == null && subroot == null) {
+            return true;
+        }
+        if (root.val != subroot.val || root == null || subroot == null) {
+            return false;
+        }
+
+        return sumroottree_temp(root.left , subroot.left) && sumroottree_temp(root.right , subroot.right);
+    }
+
     public static void main(String[] args) {
         Leet_104 tree = new Leet_104();
         tree.add(0, root);
+        tree.add(1, root);
+        tree.add(2, root);
+        tree.add(3, root);
+        tree.add(4, root);
+        tree.add(5, root);
+        tree.add(6, root);
 
-        System.out.println("Range Value? : " + tree.sumRootToLeaf(root));
+        tree.add2(1, root2);
+        tree.add2(3, root2);
+        tree.add2(4, root2);
+
+        System.out.println("Same ? " + (tree.isSubtree(root, root2) ? "True" : "False"));
     }
 }
