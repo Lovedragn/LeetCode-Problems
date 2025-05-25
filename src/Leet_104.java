@@ -1,5 +1,6 @@
 
 import java.util.*;
+import javax.swing.RootPaneContainer;
 
 class TreeNode {
 
@@ -216,13 +217,68 @@ public class Leet_104 {
         return false;
     }
 
+    public static int minimal = Integer.MAX_VALUE;
+
+    private int minDiff = Integer.MAX_VALUE;
+    private Integer prev = null;
+
+    public int getMinimumDifference(TreeNode root) {
+        if (root == null) {
+            return minDiff;
+        }
+
+        // Inorder traversal to compare adjacent node values
+        minDiff = getMinimumDifference(root.left);
+
+        if (prev != null) {
+            minDiff = Math.min(minDiff, Math.abs(root.val - prev));
+        }
+        prev = root.val; // Update previous node
+
+        return getMinimumDifference(root.right);
+    }
+
+    private int maxDiameter = 0; // Track max diameter
+
+    public int diameterOfBinaryTree(TreeNode root) {
+        tempdiameter(root);
+        return maxDiameter;
+    }
+
+    private int tempdiameter(TreeNode root) {
+        if (root == null) {
+            return 0;
+        }
+
+        int leftDepth = tempdiameter(root.left);
+        int rightDepth = tempdiameter(root.right);
+        maxDiameter = Math.max(maxDiameter, leftDepth + rightDepth);
+
+        return Math.max(leftDepth, rightDepth) + 1;
+    }
+
+    private int total = 0;
+    public int findTilt(TreeNode root) {
+        findtiletemp(root);
+        return total;
+    }
+    public int findtiletemp(TreeNode root){
+        if(root == null){
+            return 0;
+        }
+        int lt = findtiletemp(root.left);
+        int rt = findtiletemp(root.right);
+        int tilt = Math.abs(lt - rt);  
+        total += tilt;
+        return root.val+lt + rt;
+    }
     public static void main(String[] args) {
         Leet_104 tree = new Leet_104();
-        tree.add2(1, root2);
-        tree.add2(2, root2);
-        tree.add2(3, root2);
-        tree.add(4, root);
+        tree.add(1, root);
+        tree.add(2, root);
+        tree.add(3, root);
+      
 
-        System.out.println("Range Value? : " + tree.isCousins(root, 4, 3));
+        System.out.println("Range Value? : " + tree.findTilt(root));
     }
 }
