@@ -257,28 +257,50 @@ public class Leet_104 {
         return Math.max(leftDepth, rightDepth) + 1;
     }
 
-    private int total = 0;
+    private static int total = 0;
+
     public int findTilt(TreeNode root) {
         findtiletemp(root);
         return total;
     }
-    public int findtiletemp(TreeNode root){
-        if(root == null){
+
+    public int findtiletemp(TreeNode root) {
+        if (root == null) {
             return 0;
         }
         int lt = findtiletemp(root.left);
         int rt = findtiletemp(root.right);
-        int tilt = Math.abs(lt - rt);  
+        int tilt = Math.abs(lt - rt);
         total += tilt;
-        return root.val+lt + rt;
+        return root.val + lt + rt;
     }
+
+    public int sumRootToLeaf(TreeNode root) {
+        
+        sumRootToLeafHelper(root, new StringBuilder());
+        return total;
+    }
+
+    public static void sumRootToLeafHelper(TreeNode root, StringBuilder tempstr) {
+        if (root == null) {
+            return;
+        }
+
+        tempstr.append(root.val);
+        if (root.left == null && root.right == null) {
+            total += Integer.valueOf(tempstr.toString(), 2);
+
+        } else {
+            sumRootToLeafHelper(root.left, new StringBuilder(tempstr));
+            sumRootToLeafHelper(root.right, new StringBuilder(tempstr));
+        }
+        return;
+    }
+
     public static void main(String[] args) {
         Leet_104 tree = new Leet_104();
-        tree.add(1, root);
-        tree.add(2, root);
-        tree.add(3, root);
-      
+        tree.add(0, root);
 
-        System.out.println("Range Value? : " + tree.findTilt(root));
+        System.out.println("Range Value? : " + tree.sumRootToLeaf(root));
     }
 }
