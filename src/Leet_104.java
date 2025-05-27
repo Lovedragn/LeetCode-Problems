@@ -217,7 +217,6 @@ public class Leet_104 {
     }
 
     public static int minimal = Integer.MAX_VALUE;
-
     private int minDiff = Integer.MAX_VALUE;
     private Integer prev = null;
 
