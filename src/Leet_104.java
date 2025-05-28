@@ -32,6 +32,12 @@ public class Leet_104 {
     static TreeNode root = null;
     static TreeNode2 root2 = null;
 
+    public static int minimal = Integer.MAX_VALUE;
+    private int minDiff = Integer.MAX_VALUE;
+    private Integer prev = null;
+    private int maxDiameter = 0; // Track max diameter
+    private static int total = 0;
+
     public void add(int val, TreeNode current) {
         if (null == current) {
             root = new TreeNode(val);
@@ -216,10 +222,6 @@ public class Leet_104 {
         return false;
     }
 
-    public static int minimal = Integer.MAX_VALUE;
-    private int minDiff = Integer.MAX_VALUE;
-    private Integer prev = null;
-
     public int getMinimumDifference(TreeNode root) {
         if (root == null) {
             return minDiff;
@@ -235,8 +237,6 @@ public class Leet_104 {
 
         return getMinimumDifference(root.right);
     }
-
-    private int maxDiameter = 0; // Track max diameter
 
     public int diameterOfBinaryTree(TreeNode root) {
         tempdiameter(root);
@@ -254,8 +254,6 @@ public class Leet_104 {
 
         return Math.max(leftDepth, rightDepth) + 1;
     }
-
-    private static int total = 0;
 
     public int findTilt(TreeNode root) {
         findtiletemp(root);
@@ -355,17 +353,46 @@ public class Leet_104 {
         return 0;
     }
 
+    public TreeNode sortedArrayToBST(int[] nums) {
+        int l = (nums.length - 1) / 2;
+        int r = (nums.length - 1) / 2;
+        root = sorted_tree_temp(nums, l, r, root);
+        return root;
+    }
+
+    public static TreeNode sorted_tree_temp(int[] nums, int l, int r, TreeNode root) {
+        if (root == null) {
+            root = new TreeNode(nums[l]);
+            sorted_tree_temp(nums, l - 1, r + 1, root);
+            return root;
+        }
+        if (l == -1) {
+            return root;
+        }
+        if (l > -1) {
+            root.left = new TreeNode(nums[l]);
+            sorted_tree_temp(nums, l - 1, r, root.left);
+
+        }
+        if (r < nums.length) {
+            root.right = new TreeNode(nums[r]);
+            sorted_tree_temp(nums, l, r + 1, root.right);
+        }
+        return root;
+    }
+
     public static void main(String[] args) {
         Leet_104 tree = new Leet_104();
-        tree.add(0, root);
-        tree.add(1, root);
-        tree.add(2, root);
-        tree.add(3, root);
-        tree.add(4, root);
+        // tree.add(0, root);
+        // tree.add(1, root);
+        // tree.add(2, root);
+        // tree.add(3, root);
+        // tree.add(4, root);
 
         // tree.add2(1, root2);
         // tree.add2(3, root2);
         // tree.add2(4, root2);
-        System.out.println("Triversal ? " + (tree.inorderTraversal(root)));
+        int[] nums = {-10, -3, 0, 5, 9};
+        System.out.println("Triversal ? " + (tree.sortedArrayToBST(nums)));
     }
 }
