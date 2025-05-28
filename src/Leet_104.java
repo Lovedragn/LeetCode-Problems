@@ -296,14 +296,14 @@ public class Leet_104 {
     }
 
     public boolean isSubtree(TreeNode root, TreeNode2 subRoot) {
-       
+
         if (root == null) {
             return false;
         }
-        if (sumroottree_temp(root , subRoot)){
-        return true;
+        if (sumroottree_temp(root, subRoot)) {
+            return true;
         }
-        return isSubtree(root.left , subRoot) || isSubtree(root.right , subRoot);
+        return isSubtree(root.left, subRoot) || isSubtree(root.right, subRoot);
     }
 
     public static boolean sumroottree_temp(TreeNode root, TreeNode2 subroot) {
@@ -314,7 +314,45 @@ public class Leet_104 {
             return false;
         }
 
-        return sumroottree_temp(root.left , subroot.left) && sumroottree_temp(root.right , subroot.right);
+        return sumroottree_temp(root.left, subroot.left) && sumroottree_temp(root.right, subroot.right);
+    }
+
+    public boolean isBalanced(TreeNode root) {
+        if (root == null) {
+            return true;
+        }
+        int lt = isBalanced_temp(root.left);
+        int rt = isBalanced_temp(root.right);
+
+        if (Math.abs(lt - rt) <= 1 && isBalanced(root.left) && isBalanced(root.right)) {
+            return true;
+        }
+        return false;
+    }
+
+    public static int isBalanced_temp(TreeNode root) {
+        if (root == null) {
+            return 0;
+        }
+
+        return Math.max(isBalanced_temp(root.left), isBalanced_temp(root.right)) + 1;
+    }
+
+    public List<Integer> inorderTraversal(TreeNode root) {
+        List<Integer> list = new ArrayList<>();
+        inorderTraversal(root, list);
+        return list;
+    }
+
+    public static int inorderTraversal(TreeNode root, List<Integer> list) {
+        if (root == null) {
+            return 0;
+        }
+        inorderTraversal(root.left, list);
+        list.add(root.val);
+        inorderTraversal(root.right, list);
+
+        return 0;
     }
 
     public static void main(String[] args) {
@@ -324,13 +362,10 @@ public class Leet_104 {
         tree.add(2, root);
         tree.add(3, root);
         tree.add(4, root);
-        tree.add(5, root);
-        tree.add(6, root);
 
-        tree.add2(1, root2);
-        tree.add2(3, root2);
-        tree.add2(4, root2);
-
-        System.out.println("Same ? " + (tree.isSubtree(root, root2) ? "True" : "False"));
+        // tree.add2(1, root2);
+        // tree.add2(3, root2);
+        // tree.add2(4, root2);
+        System.out.println("Triversal ? " + (tree.inorderTraversal(root)));
     }
 }
