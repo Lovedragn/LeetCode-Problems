@@ -35,7 +35,7 @@ public class Leet_104 {
     public static int minimal = Integer.MAX_VALUE;
     private int minDiff = Integer.MAX_VALUE;
     private Integer prev = null;
-    private int maxDiameter = 0; // Track max diameter
+    private int maxDiameter = 0;
     private static int total = 0;
 
     public void add(int val, TreeNode current) {
@@ -354,31 +354,25 @@ public class Leet_104 {
     }
 
     public TreeNode sortedArrayToBST(int[] nums) {
-        int l = (nums.length - 1) / 2;
-        int r = (nums.length - 1) / 2;
-        root = sorted_tree_temp(nums, l, r, root);
-        return root;
+        if (nums.length == 0) {
+            return null;
+        }
+
+        return getBst(nums, 0, nums.length - 1);
     }
 
-    public static TreeNode sorted_tree_temp(int[] nums, int l, int r, TreeNode root) {
-        if (root == null) {
-            root = new TreeNode(nums[l]);
-            sorted_tree_temp(nums, l - 1, r + 1, root);
-            return root;
+    public static TreeNode getBst(int arr[], int startIdx, int endIdx) {
+        if (startIdx > endIdx) {
+            return null;
         }
-        if (l == -1) {
-            return root;
-        }
-        if (l > -1) {
-            root.left = new TreeNode(nums[l]);
-            sorted_tree_temp(nums, l - 1, r, root.left);
 
-        }
-        if (r < nums.length) {
-            root.right = new TreeNode(nums[r]);
-            sorted_tree_temp(nums, l, r + 1, root.right);
-        }
-        return root;
+        int mid = (startIdx + endIdx) / 2;
+        TreeNode bst = new TreeNode(arr[mid]);
+        bst.left = getBst(arr, startIdx, mid - 1);
+        bst.right = getBst(arr, mid + 1, endIdx);
+
+        return bst;
+
     }
 
     public static void main(String[] args) {
