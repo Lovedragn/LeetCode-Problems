@@ -1,4 +1,6 @@
 
+import java.util.*;
+
 class TreeNode {
 
     int val;
@@ -35,29 +37,45 @@ public class Leet_617 {
             return 0;
         }
         if (root.left == null) {
-            return minDepth(root.right) +1;
+            return minDepth(root.right) + 1;
         }
         if (root.right == null) {
-            return minDepth(root.left) + 0+0+0+1;
+            return minDepth(root.left) + 0 + 0 + 0 + 1;
         }
 
         return Math.min(minDepth(root.left), minDepth(root.right)) + 1;
     }
 
-    public static void main(String[] args) {
-        TreeNode root1 = new TreeNode(2);
-        root1.right = new TreeNode(3);
-        root1.right.right = new TreeNode(4);
-        root1.right.right.right = new TreeNode(5);
+    public static List Inorder(TreeNode root) {
+        List<Integer> list = new ArrayList<>();
+        Inorder_temp(root, list);
+        return list;
+    }
 
-        root1.right.right.right.right = new TreeNode(6);
+    public static void Inorder_temp(TreeNode root, List<Integer> list) {
+        if (root == null) {
+            return;
+        }
+        Inorder_temp(root.left, list);
+        list.add(root.val);
+        Inorder_temp(root.right , list);
+        
+
+    }
+
+    public static void main(String[] args) {
+        TreeNode root1 = new TreeNode(1);
+        root1.left = new TreeNode(2);
+        root1.left.right = new TreeNode(3);
+        root1.left.right.right = new TreeNode(4);
+        root1.left.right.right.right = new TreeNode(5);
 
         // TreeNode root2 = new TreeNode(2);
         // root2.left = new TreeNode(1);
         // root2.right = new TreeNode(3);
         // root2.left.right = new TreeNode(4);
         // root2.right.right = new TreeNode(7);
-        System.out.println("Merged Root Value: " + minDepth(root1));
+        System.out.println("Merged Root Value: " + Inorder(root1));
     }
 
 }
