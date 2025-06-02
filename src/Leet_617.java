@@ -100,11 +100,59 @@ public class Leet_617 {
 
     }
 
+    public static List<String> binaryTreePaths(TreeNode root) {
+        List<String> list = new ArrayList<>();
+        StringBuilder str = new StringBuilder();
+        binaryTreePaths_temp(root, list, str);
+        return list;
+    }
+
+    public static void binaryTreePaths_temp(TreeNode root, List<String> list, StringBuilder str) {
+        if (root == null) {
+            return;
+        }
+        int lens = str.length();
+        if (lens > 0) {
+            str.append("->");
+        }
+        str.append(root.val);
+        if (root.left == null && root.right == null) {
+            list.add(str.toString());
+
+        } else {
+
+            binaryTreePaths_temp(root.left, list, str);
+            binaryTreePaths_temp(root.right, list, str);
+        }
+
+        str.setLength(lens);
+    }
+    public static TreeNode main = null;
+
+    public static TreeNode searchBST(TreeNode root, int val) {
+        if (root == null) {
+            return main;
+        }
+        if (root.val == val) {
+            main = root;
+            // resroot = searchmaker_temp(root , resroot);
+            return main;
+        }
+        if (root.val > val) {
+            searchBST(root.left, val);
+
+        } else if(root.val < val){
+            searchBST(root.right, val);
+
+        }
+        return main;
+    }
+
     public static void main(String[] args) {
-        TreeNode root1 = new TreeNode(1);
-        root1.left = new TreeNode(2);
-        root1.left.right = new TreeNode(3);
-        root1.left.right.right = new TreeNode(4);
+        TreeNode root1 = new TreeNode(4);
+        root1.left = new TreeNode(3);
+        root1.left.left = new TreeNode(1);
+        root1.left.left.right = new TreeNode(2);
         root1.right = new TreeNode(5);
 
         // TreeNode root2 = new TreeNode(2);
@@ -112,7 +160,7 @@ public class Leet_617 {
         // root2.right = new TreeNode(3);
         // root2.left.right = new TreeNode(4);
         // root2.right.right = new TreeNode(7);
-        System.out.println("Merged Root Value: " + postorderTraversal(root1));
+        System.out.println("Merged Root Value: " + searchBST(root1, 11).val);
     }
 
 }
