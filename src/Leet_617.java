@@ -130,22 +130,41 @@ public class Leet_617 {
     public static TreeNode main = null;
 
     public static TreeNode searchBST(TreeNode root, int val) {
-        if (root == null) {
-            return main;
+        if (root == null || root.val == val) {
+            return root;
         }
-        if (root.val == val) {
-            main = root;
-            // resroot = searchmaker_temp(root , resroot);
-            return main;
-        }
-        if (root.val > val) {
-            searchBST(root.left, val);
+        return root.val > val ? searchBST(root.left, val) : searchBST(root.right, val);
+    }
 
-        } else if(root.val < val){
-            searchBST(root.right, val);
+    public static List<Double> averageOfLevels(TreeNode root) {
+        List<Double> list = new ArrayList<>();
+        average_temp(root, list);
+        return list;
+    }
+
+    public static void average_temp(TreeNode root, List<Double> list) {
+        Queue<TreeNode> q = new LinkedList<>();
+        q.offer(root);
+
+        while (!q.isEmpty()) {
+            int size = q.size();
+            double temp = 0;
+            for (int i = 0; i < size; i++) {
+                TreeNode vals = q.poll();
+                temp += vals.val;
+                if (vals.left != null) {
+                    q.offer(vals.left);
+                }
+                if (vals.right != null) {
+                    q.offer(vals.right);
+                }
+            }
+
+            Double half = temp / size;
+            list.add(half);
 
         }
-        return main;
+
     }
 
     public static void main(String[] args) {
@@ -160,7 +179,7 @@ public class Leet_617 {
         // root2.right = new TreeNode(3);
         // root2.left.right = new TreeNode(4);
         // root2.right.right = new TreeNode(7);
-        System.out.println("Merged Root Value: " + searchBST(root1, 11).val);
+        System.out.println("Merged Root Value: " + averageOfLevels(root1));
     }
 
 }
