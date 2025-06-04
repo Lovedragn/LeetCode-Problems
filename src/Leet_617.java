@@ -167,19 +167,66 @@ public class Leet_617 {
 
     }
 
-    public static void main(String[] args) {
-        TreeNode root1 = new TreeNode(4);
-        root1.left = new TreeNode(3);
-        root1.left.left = new TreeNode(1);
-        root1.left.left.right = new TreeNode(2);
-        root1.right = new TreeNode(5);
+    public static int res = Integer.MAX_VALUE;
+    public static Integer prev = null;
 
-        // TreeNode root2 = new TreeNode(2);
-        // root2.left = new TreeNode(1);
-        // root2.right = new TreeNode(3);
-        // root2.left.right = new TreeNode(4);
-        // root2.right.right = new TreeNode(7);
-        System.out.println("Merged Root Value: " + averageOfLevels(root1));
+    public static int minDiffInBST(TreeNode root) {
+
+        minDiff_temp(root);
+        return res;
+    }
+
+    public static void minDiff_temp(TreeNode root) {
+        if (root == null) {
+            return;
+        }
+        minDiff_temp(root.left);
+        if (prev != null) {
+            res = Math.min(res, Math.abs(root.val - prev));
+        }
+        prev = root.val;
+        minDiff_temp(root.right);
+    }
+
+    public static boolean leafSimilar(TreeNode root1, TreeNode root2) {
+
+        List<Integer> r1 = new ArrayList<>();
+        List<Integer> r2 = new ArrayList<>();
+        leafsimilar_temp(root1, r1);
+        leafsimilar_temp(root2, r2);
+     
+        if (r1.equals(r2)) {
+            return true;
+        }
+        return false;
+    }
+
+    public static void leafsimilar_temp(TreeNode root, List<Integer> list) {
+        if (root == null) {
+            return;
+        }
+        if (root.left == null && root.right == null) {
+            list.add(root.val);
+            return;
+        }
+
+        leafsimilar_temp(root.left, list);
+        leafsimilar_temp(root.right, list);
+
+    }
+
+    public static void main(String[] args) {
+        TreeNode root1 = new TreeNode(10);
+        root1.left = new TreeNode(7);
+        root1.left.left = new TreeNode(5);
+        root1.right = new TreeNode(11);
+
+        TreeNode root2 = new TreeNode(10);
+        root2.left = new TreeNode(7);
+        root2.right = new TreeNode(5);
+        root2.left.right = new TreeNode(11);
+
+        System.out.println("Same  : ? " +( leafSimilar(root1 , root2) ? "True" : "false"));
     }
 
 }
