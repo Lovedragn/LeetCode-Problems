@@ -228,5 +228,4 @@ public class Leet_617 {
 
         System.out.println("Same  : ? " +( leafSimilar(root1 , root2) ? "True" : "false"));
     }
-
 }
