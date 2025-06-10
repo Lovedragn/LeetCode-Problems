@@ -9,17 +9,20 @@ public class Leet_1046 {
             q.offer(stone);
         }
 
-        int initial = q.poll();//7
-        while(!q.isEmpty()) {
-            int helper = q.poll();//3 2
-            initial = Math.abs(initial - helper);//4 2 
+        while (q.size() > 1) {
+            int initial = q.poll();// 7
+            int helper = q.poll();// 3 2
+            int diff = Math.abs(initial - helper);// 4 2
+            if (diff != 0) {
+                q.offer(diff);
+            }
         }
 
-        return initial;
+        return q.isEmpty() ? 0 : q.poll();
     }
 
     public static void main(String args[]) {
-        int[] stones = { 3,7, 2 };
+        int[] stones = { 3, 7, 2 };
         System.out.println(lastStoneWeight(stones));
     }
 }
