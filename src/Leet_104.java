@@ -203,7 +203,8 @@ public class Leet_104 {
                 }
                 if (temproot.left != null && temproot.right != null) {
 
-                    if ((temproot.left.val == x && temproot.right.val == y) || (temproot.left.val == y && temproot.right.val == x)) {
+                    if ((temproot.left.val == x && temproot.right.val == y)
+                            || (temproot.left.val == y && temproot.right.val == x)) {
                         return false;
                     }
                 }
@@ -375,18 +376,42 @@ public class Leet_104 {
 
     }
 
+    private static List<Integer> list = new ArrayList<>();
+
+    public static int sumNumbers(TreeNode root) {
+        formation(root, new StringBuilder());
+        int res = 0;
+        for (int i : list) {
+            res += i;
+        }
+        return res;
+    }
+
+    public static void formation(TreeNode root, StringBuilder newstr) {
+        if (root == null) {
+            return;
+        }
+        newstr.append(root.val);
+        if (root.left == null && root.right == null) {
+            list.add(Integer.parseInt(newstr.toString()));
+        } else {
+            formation(root.left,new StringBuilder( newstr));
+            formation(root.right, new StringBuilder( newstr));
+        }
+        newstr.deleteCharAt(newstr.length() - 1);
+
+    }
+
     public static void main(String[] args) {
         Leet_104 tree = new Leet_104();
-        // tree.add(0, root);
-        // tree.add(1, root);
-        // tree.add(2, root);
-        // tree.add(3, root);
-        // tree.add(4, root);
-
+        tree.add(4, root);
+        tree.add(9, root);
+        tree.add(0, root);
+        tree.add(5, root);
+        tree.add(1, root);
         // tree.add2(1, root2);
         // tree.add2(3, root2);
         // tree.add2(4, root2);
-        int[] nums = {-10, -3, 0, 5, 9};
-        System.out.println("Triversal ? " + (tree.sortedArrayToBST(nums)));
+        System.out.println("Triversal ? " + (tree.sumNumbers(root)));
     }
 }
