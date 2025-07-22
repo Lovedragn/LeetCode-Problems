@@ -28,7 +28,6 @@ public class leet_1957 {
                 res.append(s.charAt(i));
             }
         }
-
         return res.toString();
     }
 
