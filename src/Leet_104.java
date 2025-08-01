@@ -106,7 +106,6 @@ public class Leet_104 {
                 return isSameTree(p.left, q.left) && isSameTree(p.right, q.right);
             }
         }
-
         return false;
     }
 
