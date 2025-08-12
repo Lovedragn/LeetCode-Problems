@@ -20,7 +20,6 @@ public class Leet_1971 {
 
     public static void helper(int dex, int index, List<List<Integer>> adj, boolean[] visited) {
         if (trigger) return;
-
         visited[index] = true;
 
         for (Integer list : adj.get(index)) {
@@ -40,7 +39,6 @@ public class Leet_1971 {
             adj.get(edge[1]).add(edge[0]);
         }
     }
-
 
     public static void main(String args[]) {
         int n = 6;

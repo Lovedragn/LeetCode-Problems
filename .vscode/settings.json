@@ -3,5 +3,23 @@
     "java.project.outputPath": "bin",
     "java.project.referencedLibraries": [
         "lib/**/*.jar"
-    ]
+    ],
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "previewLimit": 50,
+            "server": "127.0.0.1",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "Love Dragon",
+            "database": "crud",
+            "username": "root",
+            "password": "Sujith@6212",
+            "connectionTimeout": 30
+        }
+    ],
+    "sqltools.results.reuseTabs": "connection"
 }
