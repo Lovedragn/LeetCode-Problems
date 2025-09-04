@@ -1,7 +1,7 @@
 import java.util.*;
 
 public class Leet_119 {
-     public static List<Integer> getRow(int rowIndex) {
+    public static List<Integer> getRow(int rowIndex) {
         List<Integer> row = new ArrayList<>();
         row.add(1);
 
@@ -15,10 +15,10 @@ public class Leet_119 {
             row = newRow;
         }
 
-        return row;        
+        return row;
     }
+
     public static void main(String[] args) {
-       
-        System.out.println(getRow(4)); // Output: [1, 4, 6, 4, 1]
+        System.out.println(getRow(4));
     }
 }
