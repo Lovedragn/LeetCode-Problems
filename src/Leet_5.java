@@ -22,7 +22,7 @@ public class Leet_5 {
     }
 
     public static String ispalindrome(String s, int l, int r) {
-        while (l <= r  && r < s.length() && s.charAt(l) != s.charAt(r)) {
+        while (l >= 0  && r < s.length() && s.charAt(l) == s.charAt(r)) {
             l--;
             r++;
         }
@@ -30,7 +30,7 @@ public class Leet_5 {
     }
 
     public static void main(String[] args) {
-        String str = "bababasasasas";
+        String str = "ababd";
         System.out.println(longestPalindrome(str));
     }
 }
