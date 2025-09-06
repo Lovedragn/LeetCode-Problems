@@ -3,17 +3,15 @@ import java.util.Queue;
 public class Leet_5 {
     public static String longestPalindrome(String s) {
 
-        StringBuilder res = new StringBuilder();
+        String res = "";
         for (int i = 0; i < s.length(); i++) {
-            String even = ispalindrome(s, i, i);
-            String odd = ispalindrome(s, i, i + 1);
+            String odd = ispalindrome(s, i, i);
+            String even = ispalindrome(s, i, i + 1);
 
             if (res.length() < even.length() ) {
-                res.delete(0, res.length());
-                res.append(even);
+                res =even;
             } else if (res.length() < odd.length()) {
-                res.delete(0, res.length());
-                res.append(odd);
+                res = odd;
 
             }
 
@@ -30,7 +28,7 @@ public class Leet_5 {
     }
 
     public static void main(String[] args) {
-        String str = "ababd";
+        String str = "bb";
         System.out.println(longestPalindrome(str));
     }
 }
