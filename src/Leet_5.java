@@ -5,34 +5,32 @@ public class Leet_5 {
 
         StringBuilder res = new StringBuilder();
         for (int i = 0; i < s.length(); i++) {
-            for (int j = i; j < s.length(); j++) {
-                String temp = s.substring(i, j + 1);
-                if (ispalindrome(temp)) {
-                    if (res.length() < temp.length()) {
-                        res.delete(0, res.length());
-                        res.append(temp);
-                    }
-                }
+            String even = ispalindrome(s, i, i);
+            String odd = ispalindrome(s, i, i + 1);
+
+            if (res.length() < even.length() ) {
+                res.delete(0, res.length());
+                res.append(even);
+            } else if (res.length() < odd.length()) {
+                res.delete(0, res.length());
+                res.append(odd);
+
             }
+
         }
         return res.toString();
     }
 
-    public static boolean ispalindrome(String s) {
-        int l = 0;
-        int r = s.length() - 1;
-        while (l < r) {
-            if (s.charAt(l) != s.charAt(r)) {
-                return false;
-            }
-            l++;
-            r--;
+    public static String ispalindrome(String s, int l, int r) {
+        while (l <= r  && r < s.length() && s.charAt(l) != s.charAt(r)) {
+            l--;
+            r++;
         }
-        return true;
+        return s.substring(l+1, r);
     }
 
     public static void main(String[] args) {
-        String str = "babas";
+        String str = "bababasasasas";
         System.out.println(longestPalindrome(str));
     }
 }
