@@ -20,7 +20,6 @@ public class Leet_80 {
     public static int[] removeDuplicates(int[] nums) {
         int j = 0;
         int count = 0;
-        int result = 0;
         for (int i = 1; i < nums.length-1; i++) {
             if (nums[j] == nums[i] && count >= 1) {
                 
