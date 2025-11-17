@@ -1,7 +1,6 @@
 public class Leet_29 {
 
     public static int divide(int dividend, int divisor) {
-        
         return dividend / divisor;
     }
 
