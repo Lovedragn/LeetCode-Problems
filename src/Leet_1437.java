@@ -14,13 +14,10 @@ public class Leet_1437 {
 
         for (int j = i; j < nums.length; j++) {
             if (nums[j] == 1) {
-               
-
                 if ((j - prev -1 ) < k) {
                     return false;
                 }
                  prev = j;
-           
             }
         }
 
