@@ -15,7 +15,7 @@ public class Leet_594 {
         for (Map.Entry<Integer,Integer> i : map.entrySet()) {
             if(map.containsKey(i.getKey()+1)){
                 int count = i.getValue() + map.get(i.getKey()+1);
-                res = Math.max(count , res);
+                res = Math.max(count , res); 
             }
         }
         return res;
