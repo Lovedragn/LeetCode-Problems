@@ -1,5 +1,4 @@
 
-
 public class Leet_309 {
     public static int memo;
 
@@ -28,6 +27,22 @@ public class Leet_309 {
         recursion(prices, index + 1, buy, profit);
     }
 
+    public int maxProfit2(int[] prices) {
+        int n = prices.length;
+        int aheadBuy = 0, aheadSell = 0; // dp[i+1][1], dp[i+1][0]
+        int ahead2Buy = 0; // dp[i+2][1]
+
+        for (int i = n - 1; i >= 0; i--) {
+            int currBuy = Math.max(-prices[i] + aheadSell, aheadBuy);
+            int currSell = Math.max(prices[i] + ahead2Buy, aheadSell);
+
+            ahead2Buy = aheadBuy;
+            aheadBuy = currBuy;
+            aheadSell = currSell;
+        }
+
+        return aheadBuy; // start at day 0, allowed to buy
+    }
 
     public static void main(String args[]) {
         int[] arr = { 1, 3, 4, 0, 4 };
