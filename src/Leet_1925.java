@@ -20,4 +20,4 @@ public class Leet_1925 {
         int n = 5;
         System.out.println(countTriples(n)); // Expected output: 2
     }
-}
+} 
