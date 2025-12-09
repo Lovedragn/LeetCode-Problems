@@ -3,31 +3,34 @@ import java.util.HashMap;
 public class Leet_3583 {
 
     public static int specialTriplets(int[] nums) {
-        long res = 0; // use long to avoid overflow
-        int MOD = 1000000007;
-
+        int res = 0;
+        int l = 0;
+        int r = 0;
         HashMap<Integer, Integer> count = new HashMap<>();
         HashMap<Integer, Integer> current = new HashMap<>();
-
         // Fill all count values
-        for (int num : nums) {
-            count.put(num, count.getOrDefault(num, 0) + 1);
+        for (int i = 0; i < nums.length; i++) {
+            count.put(nums[i], count.getOrDefault(nums[i], 0) + 1);
         }
+        // find the values
+        for (int i = 0; i < nums.length; i++) {
+            int value = nums[i];
 
-        // Process values
-        for (int value : nums) {
-            int l = current.getOrDefault(value * 2, 0);
             current.put(value, current.getOrDefault(value, 0) + 1);
 
-            int r = count.getOrDefault(value * 2, 0) - current.getOrDefault(value * 2, 0);
-            res += (long) l * r;
-            res %= MOD; // keep result within MOD
+            if (count.containsKey(value * 2)) {
+                l = current.get(value);
+                r = count.get(value * 2) - current.get(value * 2);
+
+                res += l + r;
+            }
         }
 
-        return (int) res;
+        return res;
     }
 
     public static void main(String[] args) {
+
         int arr[] = { 27219, 88849, 78494, 12507, 61301, 15710, 74461, 78618, 46703, 26607, 52473, 79934, 92538, 42938,
                 41759, 95927, 43595, 85093, 24491, 5969, 30638, 90438, 38355, 22963, 1417, 26178, 39708, 8052, 39537,
                 54908, 42881, 98993, 51695, 43910, 96873, 52133, 41172, 14279, 37076, 3002, 60786, 22413, 42866, 60272,
@@ -51,5 +54,7 @@ public class Leet_3583 {
                 56955, 12331, 44987, 16885, 66434, 55996, 75064, 40680, 74703, 61187, 74604, 30434, 11580, 33521, 5806,
                 64917, 37187, 66782, 74441 };
         System.out.println(specialTriplets(arr));
+
+        // Placeholder for future implementation
     }
 }
