@@ -2,59 +2,43 @@ import java.util.*;
 
 public class Leet_3531 {
     public static int countCoveredBuildings(int n, int[][] buildings) {
-        // Store building positions in a HashSet
-        Set<String> set = new HashSet<>();
+        int res = 0;
+
+        int[] max_row = new int[n + 1];
+        int[] min_row = new int[n + 1];
+        int[] max_col = new int[n + 1];
+        int[] min_col = new int[n + 1];
+
+        Arrays.fill(min_row, n + 1);
+        Arrays.fill(min_col, n + 1);
+
         for (int[] b : buildings) {
-            set.add(b[0] + "," + b[1]);
+            int x = b[0];// 1
+            int y = b[1];// 2
+
+            max_row[y] = Math.max(max_row[y], x);
+            min_row[y] = Math.min(min_row[y], x);
+            max_col[x] = Math.max(max_col[x], y);
+            min_col[x] = Math.min(min_col[x], y);
+
         }
 
-        int res = 0;
         for (int[] b : buildings) {
-            int i = b[0], j = b[1];
+            int x = b[0];// 1
+            int y = b[1];// 2
 
-            boolean left  = hasBuildingLeft(i, j, set);
-            boolean right = hasBuildingRight(i, j, set, n);
-            boolean up    = hasBuildingUp(i, j, set);
-            boolean down  = hasBuildingDown(i, j, set, n);
-
-            if (left && right && up && down) {
+            if (x > min_row[y] && x < max_row[y] && 
+                y < max_col[x] && y > min_col[x]) {
                 res++;
             }
         }
+
         return res;
-    }
-
-    private static boolean hasBuildingLeft(int i, int j, Set<String> set) {
-        for (int x = i-1; x >= 0; x--) {
-            if (set.contains(x + "," + j)) return true;
-        }
-        return false;
-    }
-
-    private static boolean hasBuildingRight(int i, int j, Set<String> set, int n) {
-        for (int x = i+1; x <= n; x++) {
-            if (set.contains(x + "," + j)) return true;
-        }
-        return false;
-    }
-
-    private static boolean hasBuildingUp(int i, int j, Set<String> set) {
-        for (int y = j-1; y >= 0; y--) {
-            if (set.contains(i + "," + y)) return true;
-        }
-        return false;
-    }
-
-    private static boolean hasBuildingDown(int i, int j, Set<String> set, int n) {
-        for (int y = j+1; y <= n; y++) {
-            if (set.contains(i + "," + y)) return true;
-        }
-        return false;
     }
 
     public static void main(String[] args) {
         int n = 3;
-        int[][] buildings = { {1,2}, {2,2}, {3,2}, {2,1}, {2,3} };
+        int[][] buildings = { { 1, 2 }, { 2, 2 }, { 3, 2 }, { 2, 1 }, { 2, 3 } };
         System.out.println(countCoveredBuildings(n, buildings)); // Output: 1
     }
 }
