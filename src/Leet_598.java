@@ -1,6 +1,6 @@
 public class Leet_598 {
 
-    public int maxCount(int m, int n, int[][] ops) {
+    public static int maxCount(int m, int n, int[][] ops) {
         if (ops == null || ops.length == 0) {
             return m * n;
         }
@@ -13,5 +13,11 @@ public class Leet_598 {
 
         return row * col;
 
+    }
+
+    public static void main(String[] args) {
+        int arr[][] = { { 1, 2, 3 }, { 4, 5, 6 },
+                { 7, 8, 9 } };
+        System.out.println(maxCount(3, 3, arr));
     }
 }
