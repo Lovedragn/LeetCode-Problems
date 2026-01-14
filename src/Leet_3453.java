@@ -1,68 +1,60 @@
 public class Leet_3453 {
 
-    public double separateSquares(int[][] squares) {
-        double totalArea = 0;
-        double low = 2e9; // Initialize with a large value
-        double high = 0;
+    public static double separateSquares(int[][] squares) {
+        double minY = getmin(squares);
+        double maxY = getmax(squares);
+        double precicion = 1e-5;
 
-        // 1. Calculate Total Area and initial bounds
-        for (int[] sq : squares) {
-            double y = sq[1];
-            double l = sq[2];
-
-            // Cast to double BEFORE multiplying to prevent Integer Overflow
-            totalArea += l * l;
-
-            low = Math.min(low, y);
-            high = Math.max(high, y + l);
-        }
-
-        double halfArea = totalArea / 2.0;
-
-        // 2. Binary Search with fixed iterations
-
-        for (int i = 0; i < 100; i++) {
-            double mid = low + (high - low) / 2.0;
-
-            if (calculateArea(squares, mid) >= halfArea) {
-                high = mid; // Area is sufficient, try to lower the line
+        // binary search
+        while (maxY - minY > precicion) {
+            double midY = (maxY + minY) / 2;
+            if (islowesthaslarger(squares, midY)) {
+                maxY = midY;
             } else {
-                low = mid; // Area is too small, need to raise the line
+                minY = midY;
             }
         }
-
-        return high;
+        return minY;
     }
 
-    // Helper function to calculate area below the line 'currentY'
-    private double calculateArea(int[][] squares, double currentY) {
-        double area = 0;
-        for (int[] sq : squares) {
-            double y = sq[1];
-            double l = sq[2];
-            double top = y + l;
+    public static double getmin(int[][] squares) {
+        double minY = 1e10;
+        for (int[] is : squares) {
+            minY = Math.min(is[1], minY);
+        }
+        return minY;
+    }
 
-            if (y >= currentY) {
-                // Case 1: Square is completely above the line
-                continue;
-            } else if (top <= currentY) {
-                // Case 2: Square is completely below the line
-                area += l * l;
-            } else {
-                // Case 3: Line cuts through the square
-                // We take the width (l) * the height of the bottom portion (currentY - y)
-                area += l * (currentY - y);
+    public static double getmax(int[][] squares) {
+        double maxY = 1e-10;
+        for (int[] is : squares) {
+            maxY = Math.max(is[1] + is[2], maxY);
+        }
+        return maxY;
+    }
+
+    public static boolean islowesthaslarger(int[][] squares , double midY){
+        double upperarea=0,lowerarea =0;
+        for (int[] square : squares) {
+            double bottomY = square[1],side = square[2],topY = side + bottomY;
+            if(topY <= midY){
+                lowerarea += side * side;
+            }else if(bottomY >= midY){
+                upperarea += side * side;
+            }else{
+                double below = midY - bottomY, above = topY - midY;
+                lowerarea += below * side;
+                upperarea += above * side;
             }
         }
-        return area;
+        return lowerarea >= upperarea;
     }
 
     public static void main(String[] args) {
         Leet_3453 solver = new Leet_3453();
         int[][] squares = {
-            {0, 0, 2},
-            {1, 1, 2},
-            {2, 2, 2}
+                { 0, 0, 2 },
+                { 1, 1, 1 }
         };
         double result = solver.separateSquares(squares);
         System.out.println(result);
