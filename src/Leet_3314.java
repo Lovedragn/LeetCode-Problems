@@ -8,7 +8,10 @@ public class Leet_3314 {
         for (int i = 0; i < nums.size(); i++) {
             int n = nums.get(i);
             if ((n & 1) == 1) {
-                res[i] = n & ~(((n + 1) & ~n) >> 1);
+                int lowestZeroBit = (n + 1) & ~n;
+                int shifted = lowestZeroBit >> 1;
+                int mask = ~shifted;
+                res[i] = n & mask;
             } else {
                 res[i] = -1;
             }
