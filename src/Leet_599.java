@@ -1,3 +1,8 @@
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 public class Leet_599 {
 
     public String[] findRestaurant(String[] list1, String[] list2) {
