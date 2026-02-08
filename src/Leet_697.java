@@ -1,45 +1,20 @@
 import java.util.*;
 
 public class Leet_697 {
-    public static int findShortestSubArray(int[] nums) {
-        int res = Integer.MAX_VALUE;
-
-        int[] l1 = new int[nums.length];
-        int[] l2 = new int[nums.length];
-        
-        HashMap<Integer, Integer> map = new HashMap<>();
-        Arrays.fill(l1, -1);
-        Arrays.fill(l2, -1);
-
-        // Build frequency map and track first/last positions
-        for (int index = 0; index < nums.length; index++) {
-            if (l1[nums[index]] == -1) {
-                l1[nums[index]] = index;
-            }
-            l2[nums[index]] = index;
-            map.put(nums[index], map.getOrDefault(nums[index], 0) + 1);
-        }
-
-        // Convert entries to a list and sort by frequency descending
-        List<Map.Entry<Integer, Integer>> entries = new ArrayList<>(map.entrySet());
-        entries.sort(Collections.reverseOrder(Map.Entry.comparingByValue()));
-        System.out.println(entries);
-
-        // Get the maximum frequency
-        Integer maxVal = entries.get(0).getValue();
-
-        // Check all elements with that maximum frequency
-        for (Map.Entry<Integer, Integer> m : entries) {
-            int values = m.getValue();
-            int keys = m.getKey();
-            if (maxVal != values) break;
-
-            int distance = l2[keys] - l1[keys] + 1; // +1 to include both ends
-            res = Math.min(distance, res);
+        public static int findShortestSubArray(int[] A) {
+        Map<Integer, Integer> count = new HashMap<>(), first = new HashMap<>();
+        int res = 0, degree = 0;
+        for (int i = 0; i < A.length; ++i) {
+            first.putIfAbsent(A[i], i);
+            count.put(A[i], count.getOrDefault(A[i], 0) + 1);
+            if (count.get(A[i]) > degree) {
+                degree = count.get(A[i]);
+                res = i - first.get(A[i]) + 1;
+            } else if (count.get(A[i]) == degree)
+                res = Math.min(res, i - first.get(A[i]) + 1);
         }
         return res;
     }
-
     public static void main(String[] args) {
         int arr[] = { 1, 2, 2, 3, 1 };
         System.out.println(findShortestSubArray(arr)); // Expected output: 2
