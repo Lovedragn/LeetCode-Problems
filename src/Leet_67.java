@@ -1,3 +1,7 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 public class Leet_67 {
     public static String addBinary(String a, String b) {
         StringBuilder str = new StringBuilder();
@@ -35,7 +39,7 @@ public class Leet_67 {
             cur_a--;
             cur_b--;
         }
-
+  
         if (carry == 1) {
             str.append('1');
         }
