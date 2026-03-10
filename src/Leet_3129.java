@@ -1,6 +1,7 @@
 import java.util.Arrays;
 import java.util.HashSet;
 public class Leet_3129 {
+    //please refer 3130
     public static int count;
 
     public static int numberOfStableArrays(int zero, int one, int limit) {
