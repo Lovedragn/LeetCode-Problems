@@ -21,5 +21,5 @@ public class Leet_3130 {
 
         return (int) ((dp[zero][one][0] + dp[zero][one][1]) % MOD);
 
-    `}
+    }
 }
