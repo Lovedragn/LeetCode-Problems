@@ -18,10 +18,10 @@ public class Leet_120 {
 
     public static void main(String[] args) {
         List<List<Integer>> triangle = Arrays.asList(
-                Arrays.asList(2),
-                Arrays.asList(3, 4),
-                Arrays.asList(6, 5, 7),
-                Arrays.asList(4, 1, 8, 3)
+                Arrays.asList(   2),      //     11
+                Arrays.asList(  3, 4),    //    9  9
+                Arrays.asList( 6, 5, 7),  //  7  6  10
+                Arrays.asList(4, 1, 8, 3) // 4  1  8  3
         );
         System.out.println(minimumTotal(triangle)); // Output: 11
     }
