@@ -51,6 +51,6 @@ public class Leet_1391 {
 
     public static void main(String[] args) {
         int grid[][] = { { 2, 4, 3 }, { 6, 5, 2 } };
-        System.out.println(hasValidPath(grid) ? "T" : "F");
+        System.out.println(hasValidPath(grid) ? "T" : "F ");
     }
 }
