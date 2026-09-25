@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 public class Leet_2011 {
 
@@ -24,7 +23,6 @@ public class Leet_2011 {
         System.out.println(finalValueAfterOperations(arr));
     }
 }
-=======
 
 public class Leet_2011 {
 
@@ -50,4 +48,3 @@ public class Leet_2011 {
         System.out.println(finalValueAfterOperations(arr));
     }
 }
->>>>>>> 595bbf1 (Day-257)

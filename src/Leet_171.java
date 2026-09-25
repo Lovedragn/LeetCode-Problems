@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 public class Leet_171 {
     public static int titleToNumber(String columnTitle) {
         int res = 0;
@@ -14,7 +13,6 @@ public class Leet_171 {
         System.out.println(titleToNumber(str));
     }
 }
-=======
 public class Leet_171 {
     public static int titleToNumber(String columnTitle) {
         int res = 0;
@@ -30,4 +28,3 @@ public class Leet_171 {
         System.out.println(titleToNumber(str));
     }
 }
->>>>>>> 595bbf1 (Day-257)

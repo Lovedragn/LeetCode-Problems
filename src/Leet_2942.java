@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 import java.util.*;
 
@@ -19,7 +18,6 @@ public class Leet_2942 {
         System.out.println(findWordsContaining(arr, 'e'));
     }
 }
-=======
 
 import java.util.*;
 
@@ -40,4 +38,3 @@ public class Leet_2942 {
         System.out.println(findWordsContaining(arr, 'e'));
     }
 }
->>>>>>> 595bbf1 (Day-257)

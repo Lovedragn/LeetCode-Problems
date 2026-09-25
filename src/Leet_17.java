@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import java.util.*;
 
 public class Leet_17 {
@@ -41,7 +40,6 @@ public class Leet_17 {
         System.out.println(letterCombinations(digits));
     }
 }
-=======
 import java.util.*;
 
 public class Leet_17 {
@@ -84,4 +82,3 @@ public class Leet_17 {
         System.out.println(letterCombinations(digits));
     }
 }
->>>>>>> 595bbf1 (Day-257)

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import java.util.*;
 
 public class Leet_797 {
@@ -27,7 +26,6 @@ public class Leet_797 {
 
         System.out.println(allPathsSourceTarget(arr));
     }
-=======
 import java.util.*;
 
 public class Leet_797 {
@@ -56,5 +54,4 @@ public class Leet_797 {
 
         System.out.println(allPathsSourceTarget(arr));
     }
->>>>>>> 595bbf1 (Day-257)
 }

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 public class Leet_344 {
     public static void reverseString(char[] s) {
         int l = 0;
@@ -22,7 +21,6 @@ public class Leet_344 {
         }
     }
 }
-=======
 public class Leet_344 {
     public static void reverseString(char[] s) {
         int l = 0;
@@ -46,4 +44,3 @@ public class Leet_344 {
         }
     }
 }
->>>>>>> 595bbf1 (Day-257)

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import java.util.PriorityQueue;
 
 public class Leet_378 {
@@ -29,7 +28,6 @@ public class Leet_378 {
         int k = 8;
         System.out.println(kthSmallest(matrix, k)); // Output: 13
     }
-=======
 import java.util.PriorityQueue;
 
 public class Leet_378 {
@@ -60,5 +58,4 @@ public class Leet_378 {
         int k = 8;
         System.out.println(kthSmallest(matrix, k)); // Output: 13
     }
->>>>>>> 595bbf1 (Day-257)
 }

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import java.util.ArrayList;
 import java.util.List;
 
@@ -21,7 +20,6 @@ public class Leet_401 {
         System.out.println(readBinaryWatch(1));
     }
 }
-=======
 import java.util.ArrayList;
 import java.util.List;
 
@@ -44,4 +42,3 @@ public class Leet_401 {
         System.out.println(readBinaryWatch(1));
     }
 }
->>>>>>> 595bbf1 (Day-257)

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 public class Leet_Q2 {
     public static String removeDigit(String number, char digit) {
         String maxNum = "";
@@ -22,7 +21,6 @@ public class Leet_Q2 {
         System.out.println(removeDigit("123", '3')); // Output: "12"
     }
 }
-=======
 public class Leet_Q2 {
     public static String removeDigit(String number, char digit) {
         String maxNum = "";
@@ -46,4 +44,3 @@ public class Leet_Q2 {
         System.out.println(removeDigit("123", '3')); // Output: "12"
     }
 }
->>>>>>> 595bbf1 (Day-257)

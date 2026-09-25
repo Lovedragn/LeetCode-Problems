@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 public class Leet_2210 {
     public static int countHillValley(int[] nums) {
         int n = nums.length;
@@ -35,7 +34,6 @@ public class Leet_2210 {
         System.out.println(countHillValley(arr));  // Output: 3
     }
 }
-=======
 public class Leet_2210 {
     public static int countHillValley(int[] nums) {
         int n = nums.length;
@@ -72,4 +70,3 @@ public class Leet_2210 {
         System.out.println(countHillValley(arr));  // Output: 3
     }
 }
->>>>>>> 595bbf1 (Day-257)

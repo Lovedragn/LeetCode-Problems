@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 public class Leet_2114 {
 
@@ -18,7 +17,6 @@ public class Leet_2114 {
         System.out.println(s.mostWordsFound(str));
     }
 }
-=======
 
 public class Leet_2114 {
 
@@ -38,4 +36,3 @@ public class Leet_2114 {
         System.out.println(s.mostWordsFound(str));
     }
 }
->>>>>>> 595bbf1 (Day-257)

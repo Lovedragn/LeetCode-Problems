@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 public class Leet_172 {
 
@@ -18,7 +17,6 @@ public class Leet_172 {
         System.err.println(trailingZeroes(n));
     }
 }
-=======
 
 public class Leet_172 {
 
@@ -38,4 +36,3 @@ public class Leet_172 {
         System.err.println(trailingZeroes(n));
     }
 }
->>>>>>> 595bbf1 (Day-257)

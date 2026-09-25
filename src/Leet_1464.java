@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import java.util.Collections;
 import java.util.PriorityQueue;
 
@@ -17,7 +16,6 @@ public class Leet_1464 {
         System.out.println(maxProduct(nums)); // Output: 12
     }
 }
-=======
 import java.util.Collections;
 import java.util.PriorityQueue;
 
@@ -36,4 +34,3 @@ public class Leet_1464 {
         System.out.println(maxProduct(nums)); // Output: 12
     }
 }
->>>>>>> 595bbf1 (Day-257)

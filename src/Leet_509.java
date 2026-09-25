@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 public class Leet_509 {
      public static int fib(int n) {
         if(n < 1){
@@ -19,7 +18,6 @@ public class Leet_509 {
         System.out.println(fib(n));
     }
 }
-=======
 public class Leet_509 {
      public static int fib(int n) {
         if(n < 1){
@@ -40,4 +38,3 @@ public class Leet_509 {
         System.out.println(fib(n));
     }
 }
->>>>>>> 595bbf1 (Day-257)

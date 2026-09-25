@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 public class Leet_74 {
 
@@ -38,7 +37,6 @@ public class Leet_74 {
         System.out.println(searchMatrix(arr, 1));
     }
 }
-=======
 
 public class Leet_74 {
 
@@ -78,4 +76,3 @@ public class Leet_74 {
         System.out.println(searchMatrix(arr, 1));
     }
 }
->>>>>>> 595bbf1 (Day-257)

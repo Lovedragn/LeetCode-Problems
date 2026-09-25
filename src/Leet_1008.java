@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 public class Leet_1008 {
 
@@ -24,7 +23,6 @@ public class Leet_1008 {
         System.out.println(defangIPaddr(address));
     }
 }
-=======
 
 public class Leet_1008 {
 
@@ -50,4 +48,3 @@ public class Leet_1008 {
         System.out.println(defangIPaddr(address));
     }
 }
->>>>>>> 595bbf1 (Day-257)

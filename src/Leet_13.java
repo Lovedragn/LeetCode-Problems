@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 import java.util.*;
 
@@ -37,7 +36,6 @@ class Leet_13 {
         System.out.println(romanToInt(s));
     }
 }
-=======
 
 import java.util.*;
 
@@ -76,4 +74,3 @@ class Leet_13 {
         System.out.println(romanToInt(s));
     }
 }
->>>>>>> 595bbf1 (Day-257)

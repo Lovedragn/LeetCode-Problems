@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import java.util.*;
 
 public class Leet_3487 {
@@ -28,7 +27,6 @@ public class Leet_3487 {
         System.out.println(maxSum(arr));
     }
 }
-=======
 import java.util.*;
 
 public class Leet_3487 {
@@ -58,4 +56,3 @@ public class Leet_3487 {
         System.out.println(maxSum(arr));
     }
 }
->>>>>>> 595bbf1 (Day-257)

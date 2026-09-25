@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 public class Leet_3110 {
 
@@ -16,7 +15,6 @@ public class Leet_3110 {
     public static void main(String[] args) {
         System.out.println(scoreOfString("hello"));
     }
-=======
 
 public class Leet_3110 {
 
@@ -34,5 +32,4 @@ public class Leet_3110 {
     public static void main(String[] args) {
         System.out.println(scoreOfString("hello"));
     }
->>>>>>> 595bbf1 (Day-257)
 }

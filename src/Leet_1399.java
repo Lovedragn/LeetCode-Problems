@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 import java.util.*;
 
@@ -36,7 +35,6 @@ public class Leet_1399 {
         System.out.println(countLargestGroup(n));
     }
 }
-=======
 
 import java.util.*;
 
@@ -74,4 +72,3 @@ public class Leet_1399 {
         System.out.println(countLargestGroup(n));
     }
 }
->>>>>>> 595bbf1 (Day-257)

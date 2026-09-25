@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 public class Leet_33 {
 
@@ -35,7 +34,6 @@ public class Leet_33 {
         System.out.println(search(nums, 5));
     }
 }
-=======
 
 public class Leet_33 {
 
@@ -72,4 +70,3 @@ public class Leet_33 {
         System.out.println(search(nums, 5));
     }
 }
->>>>>>> 595bbf1 (Day-257)

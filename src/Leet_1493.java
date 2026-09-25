@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 public class Leet_1493 {
     public static int res;
 
@@ -41,7 +40,6 @@ public class Leet_1493 {
         int arr[] = { 0,0};
         System.out.println(longestSubarray(arr));
     }
-=======
 public class Leet_1493 {
     public static int res;
 
@@ -84,5 +82,4 @@ public class Leet_1493 {
         int arr[] = { 0,0};
         System.out.println(longestSubarray(arr));
     }
->>>>>>> 595bbf1 (Day-257)
 }

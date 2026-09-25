@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 public class Leet_5 {
     public static String longestPalindrome(String s) {
 
@@ -31,7 +30,6 @@ public class Leet_5 {
         System.out.println(longestPalindrome(str));
     }
 }
-=======
 public class Leet_5 {
     public static String longestPalindrome(String s) {
 
@@ -64,4 +62,3 @@ public class Leet_5 {
         System.out.println(longestPalindrome(str));
     }
 }
->>>>>>> 595bbf1 (Day-257)

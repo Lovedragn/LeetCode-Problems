@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import java.util.Stack;
 
 public class Leet_150 {
@@ -50,7 +49,6 @@ public class Leet_150 {
         System.out.println(evalRPN(tokens)); // Outputs 6
     }
 }
-=======
 import java.util.Stack;
 
 public class Leet_150 {
@@ -102,4 +100,3 @@ public class Leet_150 {
         System.out.println(evalRPN(tokens)); // Outputs 6
     }
 }
->>>>>>> 595bbf1 (Day-257)

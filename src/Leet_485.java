@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 public class Leet_485 {
 
@@ -25,7 +24,6 @@ public class Leet_485 {
         System.out.println(findMaxConsecutiveOnes(all));
     }
 }
-=======
 
 public class Leet_485 {
 
@@ -52,4 +50,3 @@ public class Leet_485 {
         System.out.println(findMaxConsecutiveOnes(all));
     }
 }
->>>>>>> 595bbf1 (Day-257)

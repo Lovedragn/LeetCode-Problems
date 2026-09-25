@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import java.util.ArrayList;
 import java.util.List;
 
@@ -28,7 +27,6 @@ public class Leet_1863 {
         int[] nums = { 5,1,6};
         System.out.println(subsetXORSum(nums));
     }
-=======
 import java.util.ArrayList;
 import java.util.List;
 
@@ -58,5 +56,4 @@ public class Leet_1863 {
         int[] nums = { 5,1,6};
         System.out.println(subsetXORSum(nums));
     }
->>>>>>> 595bbf1 (Day-257)
 }

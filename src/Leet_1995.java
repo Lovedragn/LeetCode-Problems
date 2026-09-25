@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 import java.util.*;
 
@@ -31,7 +30,6 @@ public class Leet_1995 {
         System.err.println(countQuadruplets(nums));
     }
 }
-=======
 
 import java.util.*;
 
@@ -64,4 +62,3 @@ public class Leet_1995 {
         System.err.println(countQuadruplets(nums));
     }
 }
->>>>>>> 595bbf1 (Day-257)

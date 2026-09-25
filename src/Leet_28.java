@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 public class Leet_28 {
 
@@ -22,7 +21,6 @@ public class Leet_28 {
         System.out.println(strStr(haystack, needle));
     }
 }
-=======
 
 public class Leet_28 {
 
@@ -46,4 +44,3 @@ public class Leet_28 {
         System.out.println(strStr(haystack, needle));
     }
 }
->>>>>>> 595bbf1 (Day-257)

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 import java.util.HashMap;
 
@@ -42,7 +41,6 @@ public class Leet_1678 {
         System.out.println(interpret(str));
     }
 }
-=======
 
 import java.util.HashMap;
 
@@ -86,4 +84,3 @@ public class Leet_1678 {
         System.out.println(interpret(str));
     }
 }
->>>>>>> 595bbf1 (Day-257)

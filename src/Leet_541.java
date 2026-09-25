@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import java.util.Arrays;
 
 public class Leet_541 {
@@ -29,7 +28,6 @@ public class Leet_541 {
 
     }
 }
-=======
 import java.util.Arrays;
 
 public class Leet_541 {
@@ -60,4 +58,3 @@ public class Leet_541 {
 
     }
 }
->>>>>>> 595bbf1 (Day-257)

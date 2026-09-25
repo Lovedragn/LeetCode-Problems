@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import java.util.*;
 
 public class Leet_2231 {
@@ -32,7 +31,6 @@ public class Leet_2231 {
     public static void main(String[] args) {
         System.out.println(largestInteger(1234)); // Correct output: 3412
     }
-=======
 import java.util.*;
 
 public class Leet_2231 {
@@ -66,5 +64,4 @@ public class Leet_2231 {
     public static void main(String[] args) {
         System.out.println(largestInteger(1234)); // Correct output: 3412
     }
->>>>>>> 595bbf1 (Day-257)
 }

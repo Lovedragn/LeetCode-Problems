@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import java.util.*;
 public class Leet_1971 {
 
@@ -46,7 +45,6 @@ public class Leet_1971 {
         int arr[][] = { { 0, 1 }, { 0, 2 }, { 3, 5 }, { 5, 4 }, { 4, 3 } };
         System.out.println(validPath(n, arr, 0, 5));
     }
-=======
 import java.util.*;
 public class Leet_1971 {
 
@@ -94,5 +92,4 @@ public class Leet_1971 {
         int arr[][] = { { 0, 1 }, { 0, 2 }, { 3, 5 }, { 5, 4 }, { 4, 3 } };
         System.out.println(validPath(n, arr, 0, 5));
     }
->>>>>>> 595bbf1 (Day-257)
 }

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import java.util.*;
 
 public class Leet_46 {
@@ -35,7 +34,6 @@ public class Leet_46 {
         System.out.println(permute(nums));
     }
 }
-=======
 import java.util.*;
 
 public class Leet_46 {
@@ -72,4 +70,3 @@ public class Leet_46 {
         System.out.println(permute(nums));
     }
 }
->>>>>>> 595bbf1 (Day-257)

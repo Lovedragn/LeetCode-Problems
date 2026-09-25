@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 import com.sun.jdi.Value;
 import java.util.*;
@@ -37,7 +36,6 @@ public class Leet_1281 {
         System.out.println(groupThePeople(arr));
     }
 }
-=======
 
 import com.sun.jdi.Value;
 import java.util.*;
@@ -76,4 +74,3 @@ public class Leet_1281 {
         System.out.println(groupThePeople(arr));
     }
 }
->>>>>>> 595bbf1 (Day-257)

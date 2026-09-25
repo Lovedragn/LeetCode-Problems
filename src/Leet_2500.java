@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import java.util.Arrays;
 
 public class Leet_2500 {
@@ -28,7 +27,6 @@ public class Leet_2500 {
         System.out.println(deleteGreatestValue(arr)); // Output: 8
     }
 }
-=======
 import java.util.Arrays;
 
 public class Leet_2500 {
@@ -58,4 +56,3 @@ public class Leet_2500 {
         System.out.println(deleteGreatestValue(arr)); // Output: 8
     }
 }
->>>>>>> 595bbf1 (Day-257)

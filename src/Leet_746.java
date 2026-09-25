@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import java.util.*;
 
 public class Leet_746 {
@@ -20,7 +19,6 @@ public class Leet_746 {
         System.err.println(minCostClimbingStairs(arr));
     }
 }
-=======
 import java.util.*;
 
 public class Leet_746 {
@@ -42,4 +40,3 @@ public class Leet_746 {
         System.err.println(minCostClimbingStairs(arr));
     }
 }
->>>>>>> 595bbf1 (Day-257)

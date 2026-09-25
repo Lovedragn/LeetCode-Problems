@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 public class Leet_2894 {
 
@@ -21,7 +20,6 @@ public class Leet_2894 {
         System.out.println(differenceOfSums(10, 3));
     }
 }
-=======
 
 public class Leet_2894 {
 
@@ -44,4 +42,3 @@ public class Leet_2894 {
         System.out.println(differenceOfSums(10, 3));
     }
 }
->>>>>>> 595bbf1 (Day-257)

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 public class Leet_202 {
 
@@ -25,7 +24,6 @@ public class Leet_202 {
         System.out.println(isHappy(n));
     }
 }
-=======
 
 public class Leet_202 {
 
@@ -52,4 +50,3 @@ public class Leet_202 {
         System.out.println(isHappy(n));
     }
 }
->>>>>>> 595bbf1 (Day-257)

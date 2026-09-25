@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 
 
@@ -33,7 +32,6 @@ public class Leet_2000 {
         System.out.println(reversePrefix(s, target));
     }
 }
-=======
 
 
 
@@ -68,4 +66,3 @@ public class Leet_2000 {
         System.out.println(reversePrefix(s, target));
     }
 }
->>>>>>> 595bbf1 (Day-257)

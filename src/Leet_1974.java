@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 public class Leet_1974 {
 
@@ -21,7 +20,6 @@ public class Leet_1974 {
         System.out.println(minTimeToType(str));
     }
 }
-=======
 
 public class Leet_1974 {
 
@@ -44,4 +42,3 @@ public class Leet_1974 {
         System.out.println(minTimeToType(str));
     }
 }
->>>>>>> 595bbf1 (Day-257)

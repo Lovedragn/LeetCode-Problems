@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 public class Leet_1922 {
 
@@ -14,7 +13,6 @@ public class Leet_1922 {
         System.out.println(countGoodNumbers(n));
     }
 }
-=======
 
 public class Leet_1922 {
 
@@ -30,4 +28,3 @@ public class Leet_1922 {
         System.out.println(countGoodNumbers(n));
     }
 }
->>>>>>> 595bbf1 (Day-257)

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 class Node {
 
@@ -64,7 +63,6 @@ public class Leet_1290 {
         LL.show();
     }
 }
-=======
 
 class Node {
 
@@ -130,4 +128,3 @@ public class Leet_1290 {
         LL.show();
     }
 }
->>>>>>> 595bbf1 (Day-257)

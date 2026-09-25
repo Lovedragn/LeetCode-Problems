@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import java.util.*;
 
 public class Leet_207 {
@@ -49,7 +48,6 @@ public class Leet_207 {
         System.out.println(canFinish(2, arr) ? "True" : "False");
     }
 }
-=======
 import java.util.*;
 
 public class Leet_207 {
@@ -100,4 +98,3 @@ public class Leet_207 {
         System.out.println(canFinish(2, arr) ? "True" : "False");
     }
 }
->>>>>>> 595bbf1 (Day-257)

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import java.util.*;
 
 public class Leet_78 {
@@ -28,7 +27,6 @@ public class Leet_78 {
         System.out.println(subsets(arr));
     }
 }
-=======
 import java.util.*;
 
 public class Leet_78 {
@@ -58,4 +56,3 @@ public class Leet_78 {
         System.out.println(subsets(arr));
     }
 }
->>>>>>> 595bbf1 (Day-257)

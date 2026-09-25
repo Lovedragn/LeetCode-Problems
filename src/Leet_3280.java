@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 public class Leet_3280 {
 
@@ -27,7 +26,6 @@ public class Leet_3280 {
         System.out.println(convertDateToBinary(date));
     }
 }
-=======
 
 public class Leet_3280 {
 
@@ -56,4 +54,3 @@ public class Leet_3280 {
         System.out.println(convertDateToBinary(date));
     }
 }
->>>>>>> 595bbf1 (Day-257)

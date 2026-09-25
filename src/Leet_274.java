@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 public class Leet_274 {
 
     public static int hIndex(int[] citations) {
@@ -33,7 +32,6 @@ public class Leet_274 {
         System.out.println(hIndex(nums)); // Expected output should be 1
     }
 }
-=======
 public class Leet_274 {
 
     public static int hIndex(int[] citations) {
@@ -68,4 +66,3 @@ public class Leet_274 {
         System.out.println(hIndex(nums)); // Expected output should be 1
     }
 }
->>>>>>> 595bbf1 (Day-257)

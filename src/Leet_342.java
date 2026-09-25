@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 public class Leet_342 {
     public static boolean isPowerOfFour(int n) {
 
@@ -21,7 +20,6 @@ public class Leet_342 {
         System.out.println(isPowerOfFour(16) ? "true" : "false");
     }
 }
-=======
 public class Leet_342 {
     public static boolean isPowerOfFour(int n) {
 
@@ -44,4 +42,3 @@ public class Leet_342 {
         System.out.println(isPowerOfFour(16) ? "true" : "false");
     }
 }
->>>>>>> 595bbf1 (Day-257)

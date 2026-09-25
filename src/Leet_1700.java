@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import java.util.*;
 public class Leet_1700 {
 
@@ -26,7 +25,6 @@ public class Leet_1700 {
         System.out.println(countStudents(stundent, sand));
     }
 }
-=======
 import java.util.*;
 public class Leet_1700 {
 
@@ -54,4 +52,3 @@ public class Leet_1700 {
         System.out.println(countStudents(stundent, sand));
     }
 }
->>>>>>> 595bbf1 (Day-257)

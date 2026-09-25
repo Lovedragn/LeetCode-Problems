@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 public class Leet_Q1 {
     // contest 459
     public static boolean checkDivisibility(int nn) {
@@ -26,7 +25,6 @@ public class Leet_Q1 {
         System.out.println(checkDivisibility(n) ? "true" : "false");
     }
 }
-=======
 public class Leet_Q1 {
     // contest 459
     public static boolean checkDivisibility(int nn) {
@@ -54,4 +52,3 @@ public class Leet_Q1 {
         System.out.println(checkDivisibility(n) ? "true" : "false");
     }
 }
->>>>>>> 595bbf1 (Day-257)

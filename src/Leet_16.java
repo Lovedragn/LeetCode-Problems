@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 import java.util.*;
 
@@ -33,7 +32,6 @@ public class Leet_16 {
         System.out.println(threeSumClosest(nums, target));
     }
 }
-=======
 
 import java.util.*;
 
@@ -68,4 +66,3 @@ public class Leet_16 {
         System.out.println(threeSumClosest(nums, target));
     }
 }
->>>>>>> 595bbf1 (Day-257)

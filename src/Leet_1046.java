@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import java.util.*;
 import java.util.PriorityQueue;
 
@@ -27,7 +26,6 @@ public class Leet_1046 {
         System.out.println(lastStoneWeight(stones));
     }
 }
-=======
 import java.util.*;
 import java.util.PriorityQueue;
 
@@ -56,4 +54,3 @@ public class Leet_1046 {
         System.out.println(lastStoneWeight(stones));
     }
 }
->>>>>>> 595bbf1 (Day-257)

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 public class Leet_922 {
     public static int[] sortArrayByParityII(int[] nums) {
         int even = 0;
@@ -29,7 +28,6 @@ odd+=2;
         }
     }
 }
-=======
 public class Leet_922 {
     public static int[] sortArrayByParityII(int[] nums) {
         int even = 0;
@@ -60,4 +58,3 @@ odd+=2;
         }
     }
 }
->>>>>>> 595bbf1 (Day-257)

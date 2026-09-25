@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 public class Leet_3304 {
     public static StringBuilder word = new StringBuilder("a");
 
@@ -35,7 +34,6 @@ public class Leet_3304 {
         System.out.println(kthCharacter(k));//abbcbccd
     }
 }
-=======
 public class Leet_3304 {
     public static StringBuilder word = new StringBuilder("a");
 
@@ -72,4 +70,3 @@ public class Leet_3304 {
         System.out.println(kthCharacter(k));//abbcbccd
     }
 }
->>>>>>> 595bbf1 (Day-257)

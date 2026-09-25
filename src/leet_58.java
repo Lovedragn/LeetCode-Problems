@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 public class leet_58 {
 
@@ -22,7 +21,6 @@ public class leet_58 {
         System.out.println(lengthOfLastWord(str));
     }
 }
-=======
 
 public class leet_58 {
 
@@ -46,4 +44,3 @@ public class leet_58 {
         System.out.println(lengthOfLastWord(str));
     }
 }
->>>>>>> 595bbf1 (Day-257)

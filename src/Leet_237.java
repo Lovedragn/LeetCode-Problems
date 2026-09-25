@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 public class Leet_237 {
 
@@ -51,7 +50,6 @@ public class Leet_237 {
     }
 
 }
-=======
 
 public class Leet_237 {
 
@@ -104,4 +102,3 @@ public class Leet_237 {
     }
 
 }
->>>>>>> 595bbf1 (Day-257)

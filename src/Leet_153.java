@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 public class Leet_153 {
 
@@ -30,7 +29,6 @@ public class Leet_153 {
         System.out.println(findMin(nums));
     }
 }
-=======
 
 public class Leet_153 {
 
@@ -62,4 +60,3 @@ public class Leet_153 {
         System.out.println(findMin(nums));
     }
 }
->>>>>>> 595bbf1 (Day-257)

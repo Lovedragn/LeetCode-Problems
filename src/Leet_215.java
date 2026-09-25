@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import java.util.PriorityQueue;
 
 public class Leet_215 {
@@ -17,7 +16,6 @@ public class Leet_215 {
         System.out.println(findKthLargest(nums, 2)); // 4  
     }
 }
-=======
 import java.util.PriorityQueue;
 
 public class Leet_215 {
@@ -36,4 +34,3 @@ public class Leet_215 {
         System.out.println(findKthLargest(nums, 2)); // 4  
     }
 }
->>>>>>> 595bbf1 (Day-257)

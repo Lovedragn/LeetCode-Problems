@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 import java.util.*;
 
@@ -54,7 +53,6 @@ class MyHashMap {
         }
     }
 }
-=======
 
 import java.util.*;
 
@@ -110,4 +108,3 @@ class MyHashMap {
         }
     }
 }
->>>>>>> 595bbf1 (Day-257)

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 public class Leet_2235 {
 
@@ -13,7 +12,6 @@ public class Leet_2235 {
         System.out.println(sum(num1, num2));
     }
 }
-=======
 
 public class Leet_2235 {
 
@@ -28,4 +26,3 @@ public class Leet_2235 {
         System.out.println(sum(num1, num2));
     }
 }
->>>>>>> 595bbf1 (Day-257)

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 public class Leet_1791 {
     public static int findCenter(int[][] edges) {
         int arr[] = new int[edges.length +2];
@@ -21,7 +20,6 @@ public class Leet_1791 {
         System.out.println(findCenter(arr));
     }
 }
-=======
 public class Leet_1791 {
     public static int findCenter(int[][] edges) {
         int arr[] = new int[edges.length +2];
@@ -44,4 +42,3 @@ public class Leet_1791 {
         System.out.println(findCenter(arr));
     }
 }
->>>>>>> 595bbf1 (Day-257)

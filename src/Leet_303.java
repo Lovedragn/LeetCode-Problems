@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 public class Leet_303 {
 public static int[] arr = {-2, 0, 3, -5, 2, -1};
@@ -16,7 +15,6 @@ public static int[] arr = {-2, 0, 3, -5, 2, -1};
 
     }
 }
-=======
 
 public class Leet_303 {
 public static int[] arr = {-2, 0, 3, -5, 2, -1};
@@ -34,4 +32,3 @@ public static int[] arr = {-2, 0, 3, -5, 2, -1};
 
     }
 }
->>>>>>> 595bbf1 (Day-257)

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 public class Leet_1662 {
 
@@ -26,7 +25,6 @@ public class Leet_1662 {
         System.out.println(arrayStringsAreEqual(word1, word2));
     }
 }
-=======
 
 public class Leet_1662 {
 
@@ -54,4 +52,3 @@ public class Leet_1662 {
         System.out.println(arrayStringsAreEqual(word1, word2));
     }
 }
->>>>>>> 595bbf1 (Day-257)

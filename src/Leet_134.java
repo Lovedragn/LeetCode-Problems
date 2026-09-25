@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 public class Leet_134 {
 
@@ -29,7 +28,6 @@ public class Leet_134 {
         System.err.println(canCompleteCircuit(gas, cost));
     }
 }
-=======
 
 public class Leet_134 {
 
@@ -60,4 +58,3 @@ public class Leet_134 {
         System.err.println(canCompleteCircuit(gas, cost));
     }
 }
->>>>>>> 595bbf1 (Day-257)

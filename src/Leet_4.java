@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 public class Leet_4 {
 
@@ -36,7 +35,6 @@ public class Leet_4 {
         System.out.println(findMedianSortedArrays(arr, arr2));
     }
 }
-=======
 
 public class Leet_4 {
 
@@ -74,4 +72,3 @@ public class Leet_4 {
         System.out.println(findMedianSortedArrays(arr, arr2));
     }
 }
->>>>>>> 595bbf1 (Day-257)

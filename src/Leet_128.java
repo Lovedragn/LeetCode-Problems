@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 import java.util.*;
 
@@ -31,7 +30,6 @@ public class Leet_128 {
         System.out.println(longestConsecutive(nums));
     }
 }
-=======
 
 import java.util.*;
 
@@ -64,4 +62,3 @@ public class Leet_128 {
         System.out.println(longestConsecutive(nums));
     }
 }
->>>>>>> 595bbf1 (Day-257)

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 import java.util.ArrayList;
 import java.util.List;
@@ -74,7 +73,6 @@ public class Leet_234 {
         LL.show();
     }
 }
-=======
 
 import java.util.ArrayList;
 import java.util.List;
@@ -150,4 +148,3 @@ public class Leet_234 {
         LL.show();
     }
 }
->>>>>>> 595bbf1 (Day-257)

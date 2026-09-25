@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import java.util.Stack;
 
 public class Leet_682 {
@@ -33,7 +32,6 @@ public class Leet_682 {
         System.out.println(calPoints(str));
     }
 }
-=======
 import java.util.Stack;
 
 public class Leet_682 {
@@ -68,4 +66,3 @@ public class Leet_682 {
         System.out.println(calPoints(str));
     }
 }
->>>>>>> 595bbf1 (Day-257)

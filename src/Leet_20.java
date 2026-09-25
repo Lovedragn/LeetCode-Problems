@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 import java.util.*;
 
@@ -35,7 +34,6 @@ class Leet_20{
         String s = "}";
         System.out.println(isValid(s));
     }
-=======
 
 import java.util.*;
 
@@ -72,5 +70,4 @@ class Leet_20{
         String s = "}";
         System.out.println(isValid(s));
     }
->>>>>>> 595bbf1 (Day-257)
 }

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 import java.util.HashMap;
 import java.util.Map;
@@ -37,7 +36,6 @@ public class Leet_1365 {
         }
     }
 }
-=======
 
 import java.util.HashMap;
 import java.util.Map;
@@ -76,4 +74,3 @@ public class Leet_1365 {
         }
     }
 }
->>>>>>> 595bbf1 (Day-257)

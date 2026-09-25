@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 public class Leet_42 {
 
@@ -36,7 +35,6 @@ public class Leet_42 {
         System.out.println(trap(height));
     }
 }
-=======
 
 public class Leet_42 {
 
@@ -74,4 +72,3 @@ public class Leet_42 {
         System.out.println(trap(height));
     }
 }
->>>>>>> 595bbf1 (Day-257)

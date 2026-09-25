@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 public class Leet_997 {
     public static int findJudge(int n, int[][] trust) {
 
@@ -21,7 +20,6 @@ public class Leet_997 {
         System.out.println(findJudge(3, arr));
     }
 }
-=======
 public class Leet_997 {
     public static int findJudge(int n, int[][] trust) {
 
@@ -44,4 +42,3 @@ public class Leet_997 {
         System.out.println(findJudge(3, arr));
     }
 }
->>>>>>> 595bbf1 (Day-257)

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 import java.util.HashMap;
 
@@ -27,7 +26,6 @@ public class Leet_242 {
         System.out.println(isAnagram(s, t));
     }
 }
-=======
 
 import java.util.HashMap;
 
@@ -56,4 +54,3 @@ public class Leet_242 {
         System.out.println(isAnagram(s, t));
     }
 }
->>>>>>> 595bbf1 (Day-257)

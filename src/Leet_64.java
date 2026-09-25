@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 public class Leet_64 {
 
     public static int minPathSum(int[][] grid) {
@@ -26,7 +25,6 @@ public class Leet_64 {
         System.out.println(minPathSum(grid));
     }
 }
-=======
 public class Leet_64 {
 
     public static int minPathSum(int[][] grid) {
@@ -54,4 +52,3 @@ public class Leet_64 {
         System.out.println(minPathSum(grid));
     }
 }
->>>>>>> 595bbf1 (Day-257)

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 public class Leet_905 {
     public static int[] sortArrayByParity(int[] nums) {
         int l = 0;
@@ -24,7 +23,6 @@ public class Leet_905 {
         }
     }
 }
-=======
 public class Leet_905 {
     public static int[] sortArrayByParity(int[] nums) {
         int l = 0;
@@ -50,4 +48,3 @@ public class Leet_905 {
         }
     }
 }
->>>>>>> 595bbf1 (Day-257)

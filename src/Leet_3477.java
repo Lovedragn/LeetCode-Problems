@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import java.util.*;
 
 public class Leet_3477 {
@@ -23,7 +22,6 @@ public class Leet_3477 {
         System.out.println(numOfUnplacedFruits(fruits, baskets));
     }
 }
-=======
 import java.util.*;
 
 public class Leet_3477 {
@@ -48,4 +46,3 @@ public class Leet_3477 {
         System.out.println(numOfUnplacedFruits(fruits, baskets));
     }
 }
->>>>>>> 595bbf1 (Day-257)

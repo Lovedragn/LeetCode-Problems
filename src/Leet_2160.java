@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 import java.util.Arrays;
 
@@ -26,7 +25,6 @@ public class Leet_2160 {
         System.out.println(minimumSum(num));
     }
 }
-=======
 
 import java.util.Arrays;
 
@@ -54,4 +52,3 @@ public class Leet_2160 {
         System.out.println(minimumSum(num));
     }
 }
->>>>>>> 595bbf1 (Day-257)

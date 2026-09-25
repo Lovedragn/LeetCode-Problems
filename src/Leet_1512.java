@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 public class Leet_1512 {
 
@@ -25,7 +24,6 @@ public class Leet_1512 {
         System.out.println(numIdenticalPairs(arr));
     }
 }
-=======
 
 public class Leet_1512 {
 
@@ -52,4 +50,3 @@ public class Leet_1512 {
         System.out.println(numIdenticalPairs(arr));
     }
 }
->>>>>>> 595bbf1 (Day-257)

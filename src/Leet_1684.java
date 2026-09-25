@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 public class Leet_1684 {
 
@@ -26,7 +25,6 @@ public class Leet_1684 {
         System.out.println(countConsistentStrings(target, str));
     }
 }
-=======
 
 public class Leet_1684 {
 
@@ -54,4 +52,3 @@ public class Leet_1684 {
         System.out.println(countConsistentStrings(target, str));
     }
 }
->>>>>>> 595bbf1 (Day-257)

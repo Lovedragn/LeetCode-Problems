@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import java.util.*;
 
 public class Leet_345 {
@@ -35,7 +34,6 @@ public class Leet_345 {
         System.out.println(reverseVowels(str));
     }
 }
-=======
 import java.util.*;
 
 public class Leet_345 {
@@ -72,4 +70,3 @@ public class Leet_345 {
         System.out.println(reverseVowels(str));
     }
 }
->>>>>>> 595bbf1 (Day-257)

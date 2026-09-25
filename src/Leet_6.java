@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 public class Leet_6 {
 
@@ -51,7 +50,6 @@ public class Leet_6 {
         System.out.println(convert(str, numRows)); // Output: "PAHNAPLSIIGYIR"
     }
 }
-=======
 
 public class Leet_6 {
 
@@ -104,4 +102,3 @@ public class Leet_6 {
         System.out.println(convert(str, numRows)); // Output: "PAHNAPLSIIGYIR"
     }
 }
->>>>>>> 595bbf1 (Day-257)

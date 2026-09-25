@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 public class Leet_62 {
     public static int res;
 
@@ -25,7 +24,6 @@ public class Leet_62 {
         System.out.println(uniquePaths(3, 7)); // Output: 28
     }
 }
-=======
 public class Leet_62 {
     public static int res;
 
@@ -52,4 +50,3 @@ public class Leet_62 {
         System.out.println(uniquePaths(3, 7)); // Output: 28
     }
 }
->>>>>>> 595bbf1 (Day-257)

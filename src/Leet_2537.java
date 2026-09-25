@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 import java.util.*;
 
@@ -26,7 +25,6 @@ public class Leet_2537 {
         System.out.println(countGood(nums, k));
     }
 }
-=======
 
 import java.util.*;
 
@@ -54,4 +52,3 @@ public class Leet_2537 {
         System.out.println(countGood(nums, k));
     }
 }
->>>>>>> 595bbf1 (Day-257)

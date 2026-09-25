@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 public class Leet_3162 {
 
@@ -26,7 +25,6 @@ public class Leet_3162 {
         System.out.println(numberOfPairs(nums1, nums2, 3));
     }
 }
-=======
 
 public class Leet_3162 {
 
@@ -54,4 +52,3 @@ public class Leet_3162 {
         System.out.println(numberOfPairs(nums1, nums2, 3));
     }
 }
->>>>>>> 595bbf1 (Day-257)

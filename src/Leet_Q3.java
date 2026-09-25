@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import java.util.*;
 
 public class Leet_Q3 {
@@ -19,7 +18,6 @@ public class Leet_Q3 {
         System.out.println(minimumCardPickup(arr));
     }
 }
-=======
 import java.util.*;
 
 public class Leet_Q3 {
@@ -40,4 +38,3 @@ public class Leet_Q3 {
         System.out.println(minimumCardPickup(arr));
     }
 }
->>>>>>> 595bbf1 (Day-257)

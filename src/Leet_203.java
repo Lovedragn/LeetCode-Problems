@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 class Node {
     int data;
@@ -68,7 +67,6 @@ public class Leet_203 {
     }
 
 }
-=======
 
 class Node {
     int data;
@@ -138,4 +136,3 @@ public class Leet_203 {
     }
 
 }
->>>>>>> 595bbf1 (Day-257)

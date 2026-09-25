@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import java.util.*;
 
 public class Leet_77 {
@@ -24,7 +23,6 @@ public class Leet_77 {
     public static void main(String[] args) {
         System.out.println(combine(4, 3));
     }
-=======
 import java.util.*;
 
 public class Leet_77 {
@@ -50,5 +48,4 @@ public class Leet_77 {
     public static void main(String[] args) {
         System.out.println(combine(4, 3));
     }
->>>>>>> 595bbf1 (Day-257)
 }

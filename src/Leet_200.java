@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 public class Leet_200 {
 
@@ -46,7 +45,6 @@ public class Leet_200 {
         // output 4
         System.out.println(numIslands(arr));
     }
-=======
 
 public class Leet_200 {
 
@@ -94,5 +92,4 @@ public class Leet_200 {
         // output 4
         System.out.println(numIslands(arr));
     }
->>>>>>> 595bbf1 (Day-257)
 }

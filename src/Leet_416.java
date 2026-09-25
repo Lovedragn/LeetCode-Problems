@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 public class Leet_416 {
 
@@ -27,7 +26,6 @@ public class Leet_416 {
         int[] arr = {1, 2, 3, 4};
         System.out.println(canPartition(arr)); // Expected output: true
     }
-=======
 
 public class Leet_416 {
 
@@ -56,5 +54,4 @@ public class Leet_416 {
         int[] arr = {1, 2, 3, 4};
         System.out.println(canPartition(arr)); // Expected output: true
     }
->>>>>>> 595bbf1 (Day-257)
 }

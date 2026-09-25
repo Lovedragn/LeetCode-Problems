@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 public class Leet_3289 {
 
     public static int[] getSneakyNumbers(int[] nums) {
@@ -33,7 +32,6 @@ public class Leet_3289 {
         }
     }
 }
-=======
 public class Leet_3289 {
 
     public static int[] getSneakyNumbers(int[] nums) {
@@ -68,4 +66,3 @@ public class Leet_3289 {
         }
     }
 }
->>>>>>> 595bbf1 (Day-257)

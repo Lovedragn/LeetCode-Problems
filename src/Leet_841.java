@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import java.util.*;
 
 public class Leet_841 {
@@ -46,7 +45,6 @@ public class Leet_841 {
         System.out.println(canVisitAllRooms(rooms));
     }
 }
-=======
 import java.util.*;
 
 public class Leet_841 {
@@ -94,4 +92,3 @@ public class Leet_841 {
         System.out.println(canVisitAllRooms(rooms));
     }
 }
->>>>>>> 595bbf1 (Day-257)

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 import java.util.*;
 
@@ -38,7 +37,6 @@ public class Leet_228 {
         System.out.println(summaryRanges(nums)); // Expected Output: ["0", "2->4", "6", "8->9"]
     }
 }
-=======
 
 import java.util.*;
 
@@ -78,4 +76,3 @@ public class Leet_228 {
         System.out.println(summaryRanges(nums)); // Expected Output: ["0", "2->4", "6", "8->9"]
     }
 }
->>>>>>> 595bbf1 (Day-257)

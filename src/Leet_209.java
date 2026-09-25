@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 public class Leet_209 {
 
@@ -31,7 +30,6 @@ public class Leet_209 {
         System.out.println(minSubArrayLen(target, nums));
     }
 }
-=======
 
 public class Leet_209 {
 
@@ -64,4 +62,3 @@ public class Leet_209 {
         System.out.println(minSubArrayLen(target, nums));
     }
 }
->>>>>>> 595bbf1 (Day-257)

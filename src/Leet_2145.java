@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 public class Leet_2145 {
 
@@ -19,7 +18,6 @@ public class Leet_2145 {
         System.out.println(numberOfArrays(arr, 1, 6));
     }
 }
-=======
 
 public class Leet_2145 {
 
@@ -40,4 +38,3 @@ public class Leet_2145 {
         System.out.println(numberOfArrays(arr, 1, 6));
     }
 }
->>>>>>> 595bbf1 (Day-257)

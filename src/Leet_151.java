@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 import java.util.*;
 
@@ -22,7 +21,6 @@ public class Leet_151 {
         System.out.println(reverseWords(s));
     }
 }
-=======
 
 import java.util.*;
 
@@ -46,4 +44,3 @@ public class Leet_151 {
         System.out.println(reverseWords(s));
     }
 }
->>>>>>> 595bbf1 (Day-257)

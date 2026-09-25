@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 public class Leet_12 {
 
@@ -26,7 +25,6 @@ public class Leet_12 {
         System.out.print(intToRoman(num));
     }
 }
-=======
 
 public class Leet_12 {
 
@@ -54,4 +52,3 @@ public class Leet_12 {
         System.out.print(intToRoman(num));
     }
 }
->>>>>>> 595bbf1 (Day-257)

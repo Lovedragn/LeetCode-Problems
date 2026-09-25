@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 import java.util.*;
 
@@ -31,7 +30,6 @@ public class Leet_2799 {
         System.out.println(countCompleteSubarrays(arr));
     }
 }
-=======
 
 import java.util.*;
 
@@ -64,4 +62,3 @@ public class Leet_2799 {
         System.out.println(countCompleteSubarrays(arr));
     }
 }
->>>>>>> 595bbf1 (Day-257)

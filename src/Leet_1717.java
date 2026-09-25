@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import java.util.*;
 
 public class Leet_1717 {
@@ -51,7 +50,6 @@ public class Leet_1717 {
         System.out.println("Maximum Gain: " + result);
     }
 }
-=======
 import java.util.*;
 
 public class Leet_1717 {
@@ -104,4 +102,3 @@ public class Leet_1717 {
         System.out.println("Maximum Gain: " + result);
     }
 }
->>>>>>> 595bbf1 (Day-257)

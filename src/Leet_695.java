@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import java.util.HashSet;
 public class Leet_695{
        public static int maxAreaOfIsland(int[][] grid) {
@@ -41,7 +40,6 @@ public class Leet_695{
         };
         System.out.println(maxAreaOfIsland(grid)); // Output: 6
     }
-=======
 import java.util.HashSet;
 public class Leet_695{
        public static int maxAreaOfIsland(int[][] grid) {
@@ -84,5 +82,4 @@ public class Leet_695{
         };
         System.out.println(maxAreaOfIsland(grid)); // Output: 6
     }
->>>>>>> 595bbf1 (Day-257)
 }

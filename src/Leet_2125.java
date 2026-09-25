@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 import java.math.BigInteger;
 
@@ -30,7 +29,6 @@ public class Leet_2125 {
         System.out.println(numberOfBeams(arr));
     }
 }
-=======
 
 import java.math.BigInteger;
 
@@ -62,4 +60,3 @@ public class Leet_2125 {
         System.out.println(numberOfBeams(arr));
     }
 }
->>>>>>> 595bbf1 (Day-257)

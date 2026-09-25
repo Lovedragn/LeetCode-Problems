@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import java.util.*;
 public class Leet_3146 {
 
@@ -26,7 +25,6 @@ public class Leet_3146 {
         System.out.println(findPermutationDifference(s, t));
     }
 }
-=======
 import java.util.*;
 public class Leet_3146 {
 
@@ -54,4 +52,3 @@ public class Leet_3146 {
         System.out.println(findPermutationDifference(s, t));
     }
 }
->>>>>>> 595bbf1 (Day-257)

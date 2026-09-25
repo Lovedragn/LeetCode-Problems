@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 import java.util.HashMap;
 
@@ -39,7 +38,6 @@ public class Leet_1358 {
         System.err.println(numberOfSubstrings(s));
     }
 }
-=======
 
 import java.util.HashMap;
 
@@ -80,4 +78,3 @@ public class Leet_1358 {
         System.err.println(numberOfSubstrings(s));
     }
 }
->>>>>>> 595bbf1 (Day-257)

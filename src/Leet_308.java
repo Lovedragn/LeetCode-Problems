@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import java.util.*;
 
 public class Leet_308 {
@@ -55,7 +54,6 @@ public class Leet_308 {
         System.out.println(getRandom()); // Always 2
     }
 }
-=======
 import java.util.*;
 
 public class Leet_308 {
@@ -112,4 +110,3 @@ public class Leet_308 {
         System.out.println(getRandom()); // Always 2
     }
 }
->>>>>>> 595bbf1 (Day-257)

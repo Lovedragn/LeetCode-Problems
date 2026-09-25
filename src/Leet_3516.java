@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 public class Leet_3516 {
       public static  int findClosest(int x, int y, int z) {
         int xx = Math.abs(z - x);
@@ -11,7 +10,6 @@ public class Leet_3516 {
 
     }
 }
-=======
 public class Leet_3516 {
       public static  int findClosest(int x, int y, int z) {
         int xx = Math.abs(z - x);
@@ -24,4 +22,3 @@ public class Leet_3516 {
 
     }
 }
->>>>>>> 595bbf1 (Day-257)

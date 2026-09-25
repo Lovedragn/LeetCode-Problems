@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 import java.util.*;
 
@@ -37,7 +36,6 @@ public class Leet_1021 {
         System.out.println(removeOuterParentheses(str));
     }
 }
-=======
 
 import java.util.*;
 
@@ -76,4 +74,3 @@ public class Leet_1021 {
         System.out.println(removeOuterParentheses(str));
     }
 }
->>>>>>> 595bbf1 (Day-257)

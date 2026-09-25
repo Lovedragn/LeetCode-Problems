@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -28,7 +27,6 @@ public class Leet_2264 {
         String result = largestGoodInteger(num);
         System.out.println("Largest good integer: " + result);
     }
-=======
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -58,5 +56,4 @@ public class Leet_2264 {
         String result = largestGoodInteger(num);
         System.out.println("Largest good integer: " + result);
     }
->>>>>>> 595bbf1 (Day-257)
 }

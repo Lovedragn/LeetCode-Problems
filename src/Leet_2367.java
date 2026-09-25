@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import java.util.*;
 
 public class Leet_2367 {
@@ -25,7 +24,6 @@ public class Leet_2367 {
         System.out.println(arithmeticTriplets(arr, 3));
     }
 }
-=======
 import java.util.*;
 
 public class Leet_2367 {
@@ -52,4 +50,3 @@ public class Leet_2367 {
         System.out.println(arithmeticTriplets(arr, 3));
     }
 }
->>>>>>> 595bbf1 (Day-257)

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 public class Leet_1475 {
 
@@ -31,7 +30,6 @@ public class Leet_1475 {
         // Output: [4,2,4,2,3]
     }
 }
-=======
 
 public class Leet_1475 {
 
@@ -64,4 +62,3 @@ public class Leet_1475 {
         // Output: [4,2,4,2,3]
     }
 }
->>>>>>> 595bbf1 (Day-257)

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 import java.util.*;
 
@@ -39,7 +38,6 @@ public class Leet_3211 {
         System.out.println(validStrings(n));
     }
 }
-=======
 
 import java.util.*;
 
@@ -80,4 +78,3 @@ public class Leet_3211 {
         System.out.println(validStrings(n));
     }
 }
->>>>>>> 595bbf1 (Day-257)

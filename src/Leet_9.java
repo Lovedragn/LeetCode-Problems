@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 public class Leet_9 {
 
     public static boolean isPalindrome(int x) {
@@ -23,7 +22,6 @@ public class Leet_9 {
         System.out.println(isPalindrome(num));
     }
 }
-=======
 public class Leet_9 {
 
     public static boolean isPalindrome(int x) {
@@ -48,4 +46,3 @@ public class Leet_9 {
         System.out.println(isPalindrome(num));
     }
 }
->>>>>>> 595bbf1 (Day-257)

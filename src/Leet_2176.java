@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 public class Leet_2176 {
 
@@ -24,7 +23,6 @@ public class Leet_2176 {
         System.out.println(countPairs(arr, k));
     }
 }
-=======
 
 public class Leet_2176 {
 
@@ -50,4 +48,3 @@ public class Leet_2176 {
         System.out.println(countPairs(arr, k));
     }
 }
->>>>>>> 595bbf1 (Day-257)

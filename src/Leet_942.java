@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 public class Leet_942 {
     public static int[] diStringMatch(String s) {
         int res[] = new int[s.length() + 1];
@@ -26,7 +25,6 @@ public class Leet_942 {
         }
     }
 }
-=======
 public class Leet_942 {
     public static int[] diStringMatch(String s) {
         int res[] = new int[s.length() + 1];
@@ -54,4 +52,3 @@ public class Leet_942 {
         }
     }
 }
->>>>>>> 595bbf1 (Day-257)

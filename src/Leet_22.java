@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import java.util.List;
 import java.util.*;
 
@@ -49,7 +48,6 @@ public class Leet_22 {
     public static void main(String args[]) {
         System.out.println(generateParenthesis(1));
     }
-=======
 import java.util.List;
 import java.util.*;
 
@@ -100,5 +98,4 @@ public class Leet_22 {
     public static void main(String args[]) {
         System.out.println(generateParenthesis(1));
     }
->>>>>>> 595bbf1 (Day-257)
 }

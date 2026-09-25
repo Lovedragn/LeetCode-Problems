@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import java.util.*;
 
 public class Leet_3349 {
@@ -25,7 +24,6 @@ public class Leet_3349 {
         List<Integer> list = Arrays.asList(2, 5, 7, 8, 9, 2, 3, 4, 3, 1);
         System.out.println(hasIncreasingSubarrays(list, 3)); // true
     }
-=======
 import java.util.*;
 
 public class Leet_3349 {
@@ -52,5 +50,4 @@ public class Leet_3349 {
         List<Integer> list = Arrays.asList(2, 5, 7, 8, 9, 2, 3, 4, 3, 1);
         System.out.println(hasIncreasingSubarrays(list, 3)); // true
     }
->>>>>>> 595bbf1 (Day-257)
 }

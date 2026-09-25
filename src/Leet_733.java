@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 public class Leet_733{
      public static  int[][] floodFill(int[][] image, int sr, int sc, int color) {
         if(image[sr][sc]  == color) return image;
@@ -37,7 +36,6 @@ public class Leet_733{
             System.out.println();
         }
     }
-=======
 public class Leet_733{
      public static  int[][] floodFill(int[][] image, int sr, int sc, int color) {
         if(image[sr][sc]  == color) return image;
@@ -76,5 +74,4 @@ public class Leet_733{
             System.out.println();
         }
     }
->>>>>>> 595bbf1 (Day-257)
 }

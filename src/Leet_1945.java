@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 public class Leet_1945 {
 
@@ -28,7 +27,6 @@ public class Leet_1945 {
         System.out.println(getLucky(s, k)); // Output: 6
     }
 }
-=======
 
 public class Leet_1945 {
 
@@ -58,4 +56,3 @@ public class Leet_1945 {
         System.out.println(getLucky(s, k)); // Output: 6
     }
 }
->>>>>>> 595bbf1 (Day-257)

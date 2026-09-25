@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 public class Leet_2520 {
 
@@ -20,7 +19,6 @@ public class Leet_2520 {
         System.out.println(countDigits(nums));
     }
 }
-=======
 
 public class Leet_2520 {
 
@@ -42,4 +40,3 @@ public class Leet_2520 {
         System.out.println(countDigits(nums));
     }
 }
->>>>>>> 595bbf1 (Day-257)

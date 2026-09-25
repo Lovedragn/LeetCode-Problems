@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 public class Leet_1672 {
 
@@ -23,7 +22,6 @@ public class Leet_1672 {
         System.out.println(maximumWealth(arr));
     }
 }
-=======
 
 public class Leet_1672 {
 
@@ -48,4 +46,3 @@ public class Leet_1672 {
         System.out.println(maximumWealth(arr));
     }
 }
->>>>>>> 595bbf1 (Day-257)

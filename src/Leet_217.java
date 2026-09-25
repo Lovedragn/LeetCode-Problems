@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 import java.util.*;
 
@@ -16,7 +15,6 @@ public class Leet_217 {
         System.out.println(containsDuplicate(nums));
     }
 }
-=======
 
 import java.util.*;
 
@@ -34,4 +32,3 @@ public class Leet_217 {
         System.out.println(containsDuplicate(nums));
     }
 }
->>>>>>> 595bbf1 (Day-257)

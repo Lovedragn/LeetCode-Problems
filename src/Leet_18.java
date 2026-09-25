@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import java.util.*;
 
 public class Leet_18 {
@@ -44,7 +43,6 @@ public class Leet_18 {
         System.out.println(fourSum(arr, 8));
     }
 }
-=======
 import java.util.*;
 
 public class Leet_18 {
@@ -90,4 +88,3 @@ public class Leet_18 {
         System.out.println(fourSum(arr, 8));
     }
 }
->>>>>>> 595bbf1 (Day-257)

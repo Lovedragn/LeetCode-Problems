@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 public class Leet_268 {
 
@@ -19,7 +18,6 @@ public class Leet_268 {
         System.out.print(missingNumber(arr));
     }
 }
-=======
 
 public class Leet_268 {
 
@@ -40,4 +38,3 @@ public class Leet_268 {
         System.out.print(missingNumber(arr));
     }
 }
->>>>>>> 595bbf1 (Day-257)

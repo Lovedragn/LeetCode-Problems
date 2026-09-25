@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 public class Leet_11 {
 
@@ -30,7 +29,6 @@ public class Leet_11 {
         System.out.println(maxArea(height));
     }
 }
-=======
 
 public class Leet_11 {
 
@@ -62,4 +60,3 @@ public class Leet_11 {
         System.out.println(maxArea(height));
     }
 }
->>>>>>> 595bbf1 (Day-257)

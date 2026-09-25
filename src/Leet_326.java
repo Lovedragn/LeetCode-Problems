@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import java.util.*;
 
 public class Leet_326 {
@@ -25,7 +24,6 @@ public class Leet_326 {
     }
 
 }
-=======
 import java.util.*;
 
 public class Leet_326 {
@@ -52,4 +50,3 @@ public class Leet_326 {
     }
 
 }
->>>>>>> 595bbf1 (Day-257)

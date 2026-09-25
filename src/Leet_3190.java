@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 public class Leet_3190 {
 
@@ -17,7 +16,6 @@ public class Leet_3190 {
         System.out.println(minimumOperations(arr));
     }
 }
-=======
 
 public class Leet_3190 {
 
@@ -36,4 +34,3 @@ public class Leet_3190 {
         System.out.println(minimumOperations(arr));
     }
 }
->>>>>>> 595bbf1 (Day-257)

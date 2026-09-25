@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import java.util.*;
 public class Leet_455 {
 
@@ -27,7 +26,6 @@ public class Leet_455 {
         System.out.println("Baby : " + findContentChildren(babies, cookies));
     }
 }
-=======
 import java.util.*;
 public class Leet_455 {
 
@@ -56,4 +54,3 @@ public class Leet_455 {
         System.out.println("Baby : " + findContentChildren(babies, cookies));
     }
 }
->>>>>>> 595bbf1 (Day-257)

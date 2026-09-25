@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -41,7 +40,6 @@ public class Leet_2032 {
 
     }
 }
-=======
 
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -84,4 +82,3 @@ public class Leet_2032 {
 
     }
 }
->>>>>>> 595bbf1 (Day-257)

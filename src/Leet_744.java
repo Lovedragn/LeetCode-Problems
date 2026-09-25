@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 import java.util.*;
 
@@ -24,7 +23,6 @@ public class Leet_744 {
         System.out.println(nextGreatestLetter(arr, 'z'));
     }
 }
-=======
 
 import java.util.*;
 
@@ -50,4 +48,3 @@ public class Leet_744 {
         System.out.println(nextGreatestLetter(arr, 'z'));
     }
 }
->>>>>>> 595bbf1 (Day-257)

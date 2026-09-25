@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 import java.util.*;
 
@@ -31,7 +30,6 @@ public class Leet_2325 {
         System.out.println(decodeMessage(key, message));
     }
 }
-=======
 
 import java.util.*;
 
@@ -64,4 +62,3 @@ public class Leet_2325 {
         System.out.println(decodeMessage(key, message));
     }
 }
->>>>>>> 595bbf1 (Day-257)

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 public class Leet_3024 {
 
@@ -43,7 +42,6 @@ public class Leet_3024 {
         System.out.println(triangleType(arr));
     }
 }
-=======
 
 public class Leet_3024 {
 
@@ -88,4 +86,3 @@ public class Leet_3024 {
         System.out.println(triangleType(arr));
     }
 }
->>>>>>> 595bbf1 (Day-257)

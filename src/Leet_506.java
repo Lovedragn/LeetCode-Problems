@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import java.util.*;
 import java.util.PriorityQueue;
 
@@ -43,7 +42,6 @@ public class Leet_506 {
 
     }
 }
-=======
 import java.util.*;
 import java.util.PriorityQueue;
 
@@ -88,4 +86,3 @@ public class Leet_506 {
 
     }
 }
->>>>>>> 595bbf1 (Day-257)

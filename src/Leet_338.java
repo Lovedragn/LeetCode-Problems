@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 public class Leet_338 {
     public static int[] countBits(int n) {
         int res[] = new int[n+1];
@@ -18,7 +17,6 @@ public class Leet_338 {
         }
 
     }
-=======
 public class Leet_338 {
     public static int[] countBits(int n) {
         int res[] = new int[n+1];
@@ -38,5 +36,4 @@ public class Leet_338 {
         }
 
     }
->>>>>>> 595bbf1 (Day-257)
 }

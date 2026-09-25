@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 public class Leet_55 {
 
@@ -22,7 +21,6 @@ public class Leet_55 {
             System.err.println(canJump(nums));
         }
 }
-=======
 
 public class Leet_55 {
 
@@ -46,4 +44,3 @@ public class Leet_55 {
             System.err.println(canJump(nums));
         }
 }
->>>>>>> 595bbf1 (Day-257)

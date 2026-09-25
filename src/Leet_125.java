@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 public class Leet_125 {
 
@@ -37,7 +36,6 @@ public class Leet_125 {
         System.out.println(isPalindrome(s));
     }
 }
-=======
 
 public class Leet_125 {
 
@@ -76,4 +74,3 @@ public class Leet_125 {
         System.out.println(isPalindrome(s));
     }
 }
->>>>>>> 595bbf1 (Day-257)

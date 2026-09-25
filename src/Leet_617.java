@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 import java.util.*;
 
@@ -229,7 +228,6 @@ public class Leet_617 {
 
         System.out.println("Same  : ? " +( leafSimilar(root1 , root2) ? "True" : "false"));
     }
-=======
 
 import java.util.*;
 
@@ -460,5 +458,4 @@ public class Leet_617 {
 
         System.out.println("Same  : ? " +( leafSimilar(root1 , root2) ? "True" : "false"));
     }
->>>>>>> 595bbf1 (Day-257)
 }

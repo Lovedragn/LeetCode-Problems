@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 public class Leet_2873 {
 
@@ -21,7 +20,6 @@ public class Leet_2873 {
         System.out.println(maximumTripletValue(nums));
     }
 }
-=======
 
 public class Leet_2873 {
 
@@ -44,4 +42,3 @@ public class Leet_2873 {
         System.out.println(maximumTripletValue(nums));
     }
 }
->>>>>>> 595bbf1 (Day-257)

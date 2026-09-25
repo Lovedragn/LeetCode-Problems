@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 public class Leet_63 {
     
     public static int uniquePathsWithObstacles(int[][] obstacleGrid) {
@@ -42,7 +41,6 @@ public class Leet_63 {
         System.out.println(uniquePathsWithObstacles(arr));
     }
 }
-=======
 public class Leet_63 {
     
     public static int uniquePathsWithObstacles(int[][] obstacleGrid) {
@@ -86,4 +84,3 @@ public class Leet_63 {
         System.out.println(uniquePathsWithObstacles(arr));
     }
 }
->>>>>>> 595bbf1 (Day-257)

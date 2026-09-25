@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import java.util.*;
 
 public class Leet_241 {
@@ -47,7 +46,6 @@ public class Leet_241 {
         System.out.println(diffWaysToCompute(str)); // [0, 2]
     }
 }
-=======
 import java.util.*;
 
 public class Leet_241 {
@@ -96,4 +94,3 @@ public class Leet_241 {
         System.out.println(diffWaysToCompute(str)); // [0, 2]
     }
 }
->>>>>>> 595bbf1 (Day-257)

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 public class Leet_1688 {
 
@@ -24,7 +23,6 @@ public class Leet_1688 {
         System.out.println(numberOfMatches(7));
     }
 }
-=======
 
 public class Leet_1688 {
 
@@ -50,4 +48,3 @@ public class Leet_1688 {
         System.out.println(numberOfMatches(7));
     }
 }
->>>>>>> 595bbf1 (Day-257)

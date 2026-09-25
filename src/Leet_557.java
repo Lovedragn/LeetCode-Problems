@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import java.util.*;
 
 public class Leet_557 {
@@ -32,7 +31,6 @@ public class Leet_557 {
         String s = "Let's take LeetCode contest";
         System.out.println(reverseWords(s));
     }
-=======
 import java.util.*;
 
 public class Leet_557 {
@@ -66,5 +64,4 @@ public class Leet_557 {
         String s = "Let's take LeetCode contest";
         System.out.println(reverseWords(s));
     }
->>>>>>> 595bbf1 (Day-257)
 }

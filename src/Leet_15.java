@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 import java.util.*;
 
@@ -42,7 +41,6 @@ public class Leet_15 {
         System.out.println(threeSum(nums));
     }
 }
-=======
 
 import java.util.*;
 
@@ -86,4 +84,3 @@ public class Leet_15 {
         System.out.println(threeSum(nums));
     }
 }
->>>>>>> 595bbf1 (Day-257)

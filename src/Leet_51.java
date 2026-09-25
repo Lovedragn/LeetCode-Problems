@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import java.util.*;
 
 public class Leet_51 {
@@ -60,7 +59,6 @@ public class Leet_51 {
         int n = 4;
         System.out.println(solveNQueens(n));
     }
-=======
 import java.util.*;
 
 public class Leet_51 {
@@ -122,5 +120,4 @@ public class Leet_51 {
         int n = 4;
         System.out.println(solveNQueens(n));
     }
->>>>>>> 595bbf1 (Day-257)
 }

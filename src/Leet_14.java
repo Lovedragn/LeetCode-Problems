@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 import java.util.*;
 
@@ -28,7 +27,6 @@ public class Leet_14 {
         System.out.println(longestCommonPrefix(strs));
     }
 }
-=======
 
 import java.util.*;
 
@@ -58,4 +56,3 @@ public class Leet_14 {
         System.out.println(longestCommonPrefix(strs));
     }
 }
->>>>>>> 595bbf1 (Day-257)

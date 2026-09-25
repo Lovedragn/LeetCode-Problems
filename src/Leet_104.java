@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 import java.util.*;
 
@@ -415,7 +414,6 @@ public class Leet_104 {
         System.out.println("Triversal ? " + (tree.sumNumbers(root)));
     }
 }
-=======
 
 import java.util.*;
 
@@ -832,4 +830,3 @@ public class Leet_104 {
         System.out.println("Triversal ? " + (tree.sumNumbers(root)));
     }
 }
->>>>>>> 595bbf1 (Day-257)

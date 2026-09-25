@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import java.util.*;
 
 public class Leet_3480 {
@@ -60,7 +59,6 @@ public class Leet_3480 {
         System.out.println(res); // ✅ Output should be 12
     }
 }
-=======
 import java.util.*;
 
 public class Leet_3480 {
@@ -122,4 +120,3 @@ public class Leet_3480 {
         System.out.println(res); // ✅ Output should be 12
     }
 }
->>>>>>> 595bbf1 (Day-257)

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import java.util.*;
 
 public class Leet_213 {
@@ -26,7 +25,6 @@ public class Leet_213 {
         System.out.println(rob(arr));
     }
 }
-=======
 import java.util.*;
 
 public class Leet_213 {
@@ -54,4 +52,3 @@ public class Leet_213 {
         System.out.println(rob(arr));
     }
 }
->>>>>>> 595bbf1 (Day-257)

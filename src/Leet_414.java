@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 public class Leet_414 {
 
@@ -30,7 +29,6 @@ public class Leet_414 {
         System.out.println(thirdMax(arr));
     }
 }
-=======
 
 public class Leet_414 {
 
@@ -62,4 +60,3 @@ public class Leet_414 {
         System.out.println(thirdMax(arr));
     }
 }
->>>>>>> 595bbf1 (Day-257)

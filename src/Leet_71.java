@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 import java.util.*;
 
@@ -46,7 +45,6 @@ public class Leet_71 {
         System.out.println(simplifyPath(path));
     }
 }
-=======
 
 import java.util.*;
 
@@ -94,4 +92,3 @@ public class Leet_71 {
         System.out.println(simplifyPath(path));
     }
 }
->>>>>>> 595bbf1 (Day-257)

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 public class Leet_1534 {
 
@@ -26,7 +25,6 @@ public class Leet_1534 {
         System.out.println(countGoodTriplets(arr, a, b, c));
     }
 }
-=======
 
 public class Leet_1534 {
 
@@ -54,4 +52,3 @@ public class Leet_1534 {
         System.out.println(countGoodTriplets(arr, a, b, c));
     }
 }
->>>>>>> 595bbf1 (Day-257)

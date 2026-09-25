@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 import java.util.HashMap;
 
@@ -27,7 +26,6 @@ public class Leet_2006 {
         System.out.println(countKDifference(nums, k));
     }
 }
-=======
 
 import java.util.HashMap;
 
@@ -56,4 +54,3 @@ public class Leet_2006 {
         System.out.println(countKDifference(nums, k));
     }
 }
->>>>>>> 595bbf1 (Day-257)

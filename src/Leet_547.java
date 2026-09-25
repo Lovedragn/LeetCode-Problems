@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import java.util.*;
 
 public class Leet_547 {
@@ -51,7 +50,6 @@ public class Leet_547 {
         System.out.println(findCircleNum(arr));
     }
 }
-=======
 import java.util.*;
 
 public class Leet_547 {
@@ -104,4 +102,3 @@ public class Leet_547 {
         System.out.println(findCircleNum(arr));
     }
 }
->>>>>>> 595bbf1 (Day-257)

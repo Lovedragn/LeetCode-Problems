@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import java.util.*;
 
 class Leet_Q5 {
@@ -24,7 +23,6 @@ class Leet_Q5 {
         System.out.println(appealSum(s)); // Output: 10
     }
 }
-=======
 import java.util.*;
 
 class Leet_Q5 {
@@ -50,4 +48,3 @@ class Leet_Q5 {
         System.out.println(appealSum(s)); // Output: 10
     }
 }
->>>>>>> 595bbf1 (Day-257)

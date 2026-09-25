@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 public class Leet_122 {
 
@@ -22,7 +21,6 @@ public class Leet_122 {
         System.err.println(maxProfit(arr));
     }
 }
-=======
 
 public class Leet_122 {
 
@@ -46,4 +44,3 @@ public class Leet_122 {
         System.err.println(maxProfit(arr));
     }
 }
->>>>>>> 595bbf1 (Day-257)

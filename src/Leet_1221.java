@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 import java.util.HashMap;
 
@@ -38,7 +37,6 @@ public class Leet_1221 {
         System.out.println(balancedStringSplit(str));
     }
 }
-=======
 
 import java.util.HashMap;
 
@@ -78,4 +76,3 @@ public class Leet_1221 {
         System.out.println(balancedStringSplit(str));
     }
 }
->>>>>>> 595bbf1 (Day-257)

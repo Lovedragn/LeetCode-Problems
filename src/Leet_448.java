@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 import java.util.*;
 
@@ -25,7 +24,6 @@ public class Leet_448 {
         System.out.println(findDisappearedNumbers(arr));
     }
 }
-=======
 
 import java.util.*;
 
@@ -52,4 +50,3 @@ public class Leet_448 {
         System.out.println(findDisappearedNumbers(arr));
     }
 }
->>>>>>> 595bbf1 (Day-257)

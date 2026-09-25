@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import java.util.*;
 
 public class Leet_39 {
@@ -33,7 +32,6 @@ public class Leet_39 {
         System.out.println(combinationSum(candidates, 7));
     }
 }
-=======
 import java.util.*;
 
 public class Leet_39 {
@@ -68,4 +66,3 @@ public class Leet_39 {
         System.out.println(combinationSum(candidates, 7));
     }
 }
->>>>>>> 595bbf1 (Day-257)

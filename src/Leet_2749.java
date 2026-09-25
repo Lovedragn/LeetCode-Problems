@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 public class Leet_2749 {
     public static int makeTheIntegerZero(int num1, int num2) {
         // true => current value > pre value
@@ -16,7 +15,6 @@ public class Leet_2749 {
         System.out.println(makeTheIntegerZero(3, -2));// 3
     }
 }
-=======
 public class Leet_2749 {
     public static int makeTheIntegerZero(int num1, int num2) {
         // true => current value > pre value
@@ -34,4 +32,3 @@ public class Leet_2749 {
         System.out.println(makeTheIntegerZero(3, -2));// 3
     }
 }
->>>>>>> 595bbf1 (Day-257)

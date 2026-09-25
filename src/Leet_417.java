@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -71,7 +70,6 @@ public class Leet_417 {
                 { 5, 1, 1, 2, 4 } };
         System.out.println(pacificAtlantic(arr));
     }
-=======
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -144,5 +142,4 @@ public class Leet_417 {
                 { 5, 1, 1, 2, 4 } };
         System.out.println(pacificAtlantic(arr));
     }
->>>>>>> 595bbf1 (Day-257)
 }

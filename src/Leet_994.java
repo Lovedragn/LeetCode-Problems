@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import java.util.*;
 
 public class Leet_994 {
@@ -61,7 +60,6 @@ public class Leet_994 {
         System.out.println("Minimum time to rot all oranges: " + result);
     }
 }
-=======
 import java.util.*;
 
 public class Leet_994 {
@@ -124,4 +122,3 @@ public class Leet_994 {
         System.out.println("Minimum time to rot all oranges: " + result);
     }
 }
->>>>>>> 595bbf1 (Day-257)

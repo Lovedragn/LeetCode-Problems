@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 
 public class Leet_27 {
@@ -21,7 +20,6 @@ public class Leet_27 {
         System.out.println(removeElement(nums, val));
     }
 }
-=======
 
 
 public class Leet_27 {
@@ -44,4 +42,3 @@ public class Leet_27 {
         System.out.println(removeElement(nums, val));
     }
 }
->>>>>>> 595bbf1 (Day-257)

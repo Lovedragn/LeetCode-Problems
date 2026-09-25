@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 public class Leet_1961 {
 
@@ -29,7 +28,6 @@ public class Leet_1961 {
         System.out.println(isPrefixString(words, arr));
     }
 }
-=======
 
 public class Leet_1961 {
 
@@ -60,4 +58,3 @@ public class Leet_1961 {
         System.out.println(isPrefixString(words, arr));
     }
 }
->>>>>>> 595bbf1 (Day-257)

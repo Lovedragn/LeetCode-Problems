@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -39,7 +38,6 @@ public class Leet_118 {
         System.out.println(generate(5));
     }
 }
-=======
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -80,4 +78,3 @@ public class Leet_118 {
         System.out.println(generate(5));
     }
 }
->>>>>>> 595bbf1 (Day-257)

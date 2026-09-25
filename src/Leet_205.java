@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 import java.util.*;
 
@@ -34,7 +33,6 @@ public class Leet_205 {
         System.out.println(isIsomorphic(s, t));
     }
 }
-=======
 
 import java.util.*;
 
@@ -70,4 +68,3 @@ public class Leet_205 {
         System.out.println(isIsomorphic(s, t));
     }
 }
->>>>>>> 595bbf1 (Day-257)

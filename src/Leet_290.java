@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 import java.util.*;
 
@@ -31,7 +30,6 @@ public class Leet_290 {
         System.out.println(wordPattern(pattern, s));
     }
 }
-=======
 
 import java.util.*;
 
@@ -64,4 +62,3 @@ public class Leet_290 {
         System.out.println(wordPattern(pattern, s));
     }
 }
->>>>>>> 595bbf1 (Day-257)

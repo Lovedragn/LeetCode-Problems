@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 
 public class Leet_26 {
@@ -23,7 +22,6 @@ public class Leet_26 {
         System.out.println(removeDuplicates(nums));
     }
 }
-=======
 
 
 public class Leet_26 {
@@ -48,4 +46,3 @@ public class Leet_26 {
         System.out.println(removeDuplicates(nums));
     }
 }
->>>>>>> 595bbf1 (Day-257)

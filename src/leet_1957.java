@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import java.util.*;
 
 public class leet_1957 {
@@ -36,7 +35,6 @@ public class leet_1957 {
         System.out.println(makeFancyString("leeeetcoddde"));
     }
 }
-=======
 import java.util.*;
 
 public class leet_1957 {
@@ -74,4 +72,3 @@ public class leet_1957 {
         System.out.println(makeFancyString("leeeetcoddde"));
     }
 }
->>>>>>> 595bbf1 (Day-257)

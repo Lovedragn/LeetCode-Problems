@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 import java.util.*;
 
@@ -26,7 +25,6 @@ public class Leet_231 {
         System.out.println(isPowerOfTwo(19) ? " true" : " false");
     }
 }
-=======
 
 import java.util.*;
 
@@ -54,4 +52,3 @@ public class Leet_231 {
         System.out.println(isPowerOfTwo(19) ? " true" : " false");
     }
 }
->>>>>>> 595bbf1 (Day-257)

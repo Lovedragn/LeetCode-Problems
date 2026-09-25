@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 import java.util.*;
 
@@ -49,7 +48,6 @@ public class Leet_155 {
         System.out.println(getMin());
     }
 }
-=======
 
 import java.util.*;
 
@@ -100,4 +98,3 @@ public class Leet_155 {
         System.out.println(getMin());
     }
 }
->>>>>>> 595bbf1 (Day-257)

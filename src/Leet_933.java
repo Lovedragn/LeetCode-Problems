@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import java.util.*;
 
 public class Leet_933 {
@@ -27,7 +26,6 @@ public class Leet_933 {
         System.out.println(ping(5957));
     }
 }
-=======
 import java.util.*;
 
 public class Leet_933 {
@@ -56,4 +54,3 @@ public class Leet_933 {
         System.out.println(ping(5957));
     }
 }
->>>>>>> 595bbf1 (Day-257)

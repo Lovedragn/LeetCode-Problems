@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 public class Leet_50 {
     public static double myPow(double x, int n) {
         
@@ -10,7 +9,6 @@ public class Leet_50 {
         System.out.println(myPow(n, power));
     }
 }
-=======
 public class Leet_50 {
     public static double myPow(double x, int n) {
         
@@ -22,4 +20,3 @@ public class Leet_50 {
         System.out.println(myPow(n, power));
     }
 }
->>>>>>> 595bbf1 (Day-257)

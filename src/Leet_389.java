@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 public class Leet_389 {
     public static char findTheDifference(String s, String t) {
 
@@ -25,7 +24,6 @@ public class Leet_389 {
 
     }
 }
-=======
 public class Leet_389 {
     public static char findTheDifference(String s, String t) {
 
@@ -52,4 +50,3 @@ public class Leet_389 {
 
     }
 }
->>>>>>> 595bbf1 (Day-257)

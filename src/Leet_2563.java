@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 import java.util.*;
 
@@ -28,7 +27,6 @@ public class Leet_2563 {
         System.out.println(countFairPairs(nums, 3, 6));
     }
 }
-=======
 
 import java.util.*;
 
@@ -58,4 +56,3 @@ public class Leet_2563 {
         System.out.println(countFairPairs(nums, 3, 6));
     }
 }
->>>>>>> 595bbf1 (Day-257)

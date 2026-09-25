@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 public class Leet_1317 {
     public static int[] getNoZeroIntegers(int n) {
         for (int i = 1; i < n; i++) {
@@ -27,7 +26,6 @@ public class Leet_1317 {
             System.out.println(i);
         }
     }
-=======
 public class Leet_1317 {
     public static int[] getNoZeroIntegers(int n) {
         for (int i = 1; i < n; i++) {
@@ -56,5 +54,4 @@ public class Leet_1317 {
             System.out.println(i);
         }
     }
->>>>>>> 595bbf1 (Day-257)
 }
