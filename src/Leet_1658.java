@@ -1,7 +1,7 @@
 public class Leet_1658 {
     public static int minOperations(int[] nums, int x) {
         int total = -x;
-
+ 
         for (int i : nums) {
             total += i;
         }
