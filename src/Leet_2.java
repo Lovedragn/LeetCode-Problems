@@ -2,11 +2,12 @@ class Node {
     int data;
     Node next;
 }
+
 public class Leet_2 {
-    
+
     Node head = null;
     Node head2 = null;
-    
+
     public void insert(int data) {
         Node node = new Node();
         node.data = data;
@@ -38,6 +39,7 @@ public class Leet_2 {
             n2.next = node2;
         }
     }
+
     public void show() {
         Node n = head;
         while (n != null) {
@@ -48,50 +50,69 @@ public class Leet_2 {
             }
         }
     }
-    
-    public Node addTwoNumbers(Node l1, Node l2) {
-        Node dummy = new Node();
-        Node res = dummy;
-        int total = 0, carry = 0;
-    
-        while (l1 != null || l2 != null || carry != 0) {
-            total = carry;
-    
-            if (l1 != null) {
-                total += l1.data;
-                l1 = l1.next;
+
+    public static ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+        // iterate L1 & L2
+        ListNode dummy_l1 = l1;
+        ListNode dummy_l2 = l2;
+
+        int carry = 0;
+        while (dummy_l1 != null || dummy_l2 != null) {
+            int total = 0;
+
+            if (dummy_l1 != null) {
+                total += dummy_l1.val;
             }
-            if (l2 != null) {
-                total += l2.data;
-                l2 = l2.next;
+            if (dummy_l2 != null) {
+                total += dummy_l2.val;
             }
-    
-            int num = total % 10;
+
+            total += carry;
             carry = total / 10;
-    
-            dummy.next = new Node();
-            dummy = dummy.next;
-            dummy.data = num; // Assign value to the new node
+            total = total % 10;
+
+            if (dummy_l1 != null) {
+                dummy_l1.val = total;
+
+                if (dummy_l1.next == null && dummy_l2 != null && dummy_l2.next != null) {
+                    dummy_l1.next = new ListNode(0);
+                }
+
+                if (dummy_l1.next == null && (carry != 0 || (dummy_l2 != null && dummy_l2.next != null))) {
+                } else {
+                    dummy_l1 = dummy_l1.next;
+                }
+            }
+
+            if (dummy_l2 != null) {
+                dummy_l2 = dummy_l2.next;
+            }
         }
-    
-        return res.next;
+
+        // remaining carry
+        while (carry != 0) {
+            int last = carry % 10;
+            carry /= 10;
+            ListNode newnode = new ListNode();
+            newnode.val = last;
+            dummy_l1.next = newnode;
+            dummy_l1 = dummy_l1.next;
+        }
+
+        return l1;
     }
+
     public static void main(String[] args) {
         Leet_2 LL = new Leet_2();
-        //call methods
-        LL.insert(5);
-        LL.insert(2);
-        LL.insert(13);
-        LL.insert(3);
-        LL.insert(8);
+        // call methods
+        LL.insert(9);
+        LL.insert(9);
+        LL.insert(9);
 
-        LL.insert1(5);
-        LL.insert1(2);
-        LL.insert1(13);
-        LL.insert1(3);
-        LL.insert1(8);
-        //call
-        LL.head = LL.addTwoNumbers(LL.head,LL.head2);
+        LL.insert1(1);
+
+        // call
+        LL.head = LL.addTwoNumbers(LL.head, LL.head2);
 
         LL.show();
     }

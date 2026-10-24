@@ -2,24 +2,22 @@
 import java.util.HashMap;
 
 class Leet_1 {
-   public static HashMap<Integer, Integer> map = new HashMap();
-
-   public static int[] twoSum(int[] var0, int var1) {
-      return my_fun(0, var0, var1);
-   }
-
-   public static int[] my_fun(int var0, int[] var1, int var2) {
-      if (var0 == var1.length) {
-         return new int[0];
-      } else {
-         int var3 = var2 - var1[var0];
-         if (map.containsKey(var3)) {
-            return new int[]{(Integer)map.get(var3), var0};
-         } else {
-            map.put(var1[var0], var0);
-            return my_fun(var0 + 1, var1, var2);
+  
+   public static int[] twoSum(int arr[] , int target){
+      HashMap<Integer , Integer> map = new HashMap<>();
+      //         value   index
+      int res[] = new int[2];
+      
+      for (int i = 0; i < arr.length; i++) {
+         int cal = target - arr[i];
+         if(map.containsKey(cal)){
+            res[0] = map.get(cal);
+            res[1] = i;
+            break;
          }
+         map.put(arr[i], i);
       }
+      return res;
    }
 
    public static void main(String[] var0) {
