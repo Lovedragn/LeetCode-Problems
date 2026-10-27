@@ -3,7 +3,7 @@ public class Leet_1254 {
         int x = grid.length;
         int y = grid[0].length;
         int count = 0;
-
+        
         boolean visited[][] = new boolean[x][y];
 
         for (int i = 1; i < x-1; i++) {
