@@ -1,19 +1,20 @@
 public class Leet_453 {
     public static int minMoves(int[] nums) {
-        int count =0;
-        int max =0;
+        int count = 0;
+        int min = Integer.MAX_VALUE;
+
         for (int i : nums) {
-            max = Math.max(max, i);
+            min = Math.min(min, i);
         }
 
         for (int i : nums) {
-            count += max - i;
+            count += i - min;
         }
         return count;
     }
 
     public static void main(String[] args) {
-        int arr[] = {1,2,3,4};
+        int arr[] = { 1,100};
         System.out.println(minMoves(arr));
     }
 }
